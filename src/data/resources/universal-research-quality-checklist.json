@@ -1,0 +1,37 @@
+{
+  "title": "Universal Research Quality Checklist",
+  "sections": [
+    {
+      "title": "Research Planning",
+      "content": "□ Clear research objectives defined\n□ Research questions are specific and answerable\n□ Appropriate method selected for objectives\n□ Timeline is realistic and includes buffer\n□ Budget and resources allocated\n□ Stakeholders aligned on goals and expectations"
+    },
+    {
+      "title": "Ethical Considerations",
+      "content": "□ Ethics approval obtained (if required)\n□ Participant consent process documented\n□ Data privacy and security measures in place\n□ Compensation is fair and appropriate\n□ Vulnerable populations considered\n□ Right to withdraw clearly communicated"
+    },
+    {
+      "title": "Participant Recruitment",
+      "content": "□ Target audience clearly defined\n□ Recruitment criteria documented\n□ Screening questions validated\n□ Adequate sample size determined\n□ Recruitment channels identified\n□ Backup participants available"
+    },
+    {
+      "title": "Research Materials",
+      "content": "□ Discussion guide/protocol reviewed\n□ Materials tested with pilot participant\n□ Recording equipment checked\n□ Backup systems in place\n□ Note-taking templates prepared\n□ Stimuli/prototypes ready and tested"
+    },
+    {
+      "title": "Data Collection",
+      "content": "□ Environment suitable for research\n□ Consistent process across sessions\n□ Researcher bias minimized\n□ Participants comfortable and engaged\n□ Technical issues documented\n□ Data quality checked during collection"
+    },
+    {
+      "title": "Analysis Quality",
+      "content": "□ Analysis method appropriate for data\n□ Multiple researchers involved (if possible)\n□ Findings grounded in data\n□ Contradictory evidence considered\n□ Limitations acknowledged\n□ Confidence levels indicated"
+    },
+    {
+      "title": "Reporting and Impact",
+      "content": "□ Findings clearly communicated\n□ Recommendations actionable\n□ Stakeholders can understand results\n□ Next steps identified\n□ Research artifacts stored properly\n□ Impact measurement planned"
+    },
+    {
+      "title": "Common Pitfalls to Avoid",
+      "content": "⚠️ Leading questions or confirmation bias\n⚠️ Insufficient participant diversity\n⚠️ Overgeneralization from small samples\n⚠️ Missing edge cases or exceptions\n⚠️ Ignoring contradictory data\n⚠️ Recommendations without evidence\n⚠️ Poor documentation of process"
+    }
+  ]
+} 

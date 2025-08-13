@@ -1,0 +1,122 @@
+{
+  "slug": "moderated-usability-testing",
+  "title": "Moderated Usability Testing",
+  "duration": "1 days",
+  "participants": "6 participants 30 minutes each",
+  "complexity": "low",
+  "purpose": "Test your designs with real users to identify usability issues, understand user behaviour, and validate design decisions before launch in a small amount of time. ",
+  "tools": [
+    {
+      "name": "Askable",
+      "description": "Recruitment & Moderation",
+      "icon": "fa-users",
+      "logo": "/assets/logos/askable.svg",
+      "link": "https://app.askable.com/studies"
+    },
+    {
+      "name": "Figma Slides",
+      "description": "Insights Presentation",
+      "icon": "fa-presentation",
+      "logo": "/assets/logos/figma.svg",
+      "link": "https://www.figma.com/slides/RodMmoG77vJztZsM6Z3Ean/2025-Research-Playback?node-id=0-1&t=nlOtgNcANnRzEIU2-1"
+    },
+    {
+      "name": "Figjam",
+      "description": "User Testing Notes",
+      "icon": "fa-sticky-note",
+      "logo": "/assets/logos/figma.svg",
+      "link": "https://www.figma.com/board/fqIVeexVfMkLLeFw0kezPF/2025-Usability-testing---Project-repository?node-id=3-2633&t=IILy0onEhyPwDd8l-1"
+    }
+  ],
+  "screenshots": [
+    {
+      "filename": "00-screen-goals.png",
+      "caption": "Define screen goals and user objectives"
+    },
+    {
+      "filename": "01-Add-your-screens.png",
+      "caption": "Add your screens to the testing flow"
+    },
+    {
+      "filename": "02-Creating-your-scenario.png",
+      "caption": "Create realistic user scenarios"
+    },
+    {
+      "filename": "03-Setting-Up-askable.png",
+      "caption": "Set up your study on Askable platform"
+    },
+    {
+      "filename": "04-JoiningSessions.png",
+      "caption": "Join and facilitate testing sessions"
+    },
+    {
+      "filename": "05-DocumentFeelings.png",
+      "caption": "Document user feelings and emotions"
+    },
+    {
+      "filename": "05-questions-to-ask.png",
+      "caption": "Key questions to ask during sessions"
+    },
+    {
+      "filename": "06-final-product.png",
+      "caption": "Final product presentation"
+    },
+    {
+      "filename": "06-final-product2.png",
+      "caption": "Additional final product views"
+    },
+    {
+      "filename": "07-DocumentInsights.png",
+      "caption": "Document insights and findings"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Screen Goals",
+      "description": "Screen Goals are probably one of the most important parts of the process. They set you and your test up for success by allowing you to really think through what you are trying to learn on each of the screens. \n\nThe way we write them doesn't have to be complicated; it just needs to be meaningful to you and others who are reading it, so that they can understand how to measure if you have achieved the goal or not. \n\nThings to do: \n- Write in plain English so that they are easy to comprehend. \n\nThings not to do: \n - Don't write them in a technical way that takes time to process the real meaning ",
+      "screenshot": "00-screen-goals.png"
+    },
+    {
+      "title": "Add Your Screens",
+      "description": "Using Figjam, (in link above) your job at this step is to add one screenshot for every screen that you are testing, which should correlate to your screen goals. Every screen you add has a screen goal, and every screen goal has a screenshot of that screen so that people documenting feedback can note down the feedback. \n\nAn example of this could be you start a user on the home page, you might not add a screenshot for that, as you're not looking to collect any feedback on that home page component. \n",
+      "screenshot": "01-Add-your-screens.png"
+    },
+    {
+      "title": "Create Your Scenarios",
+      "description": "To write a good scenario, first and foremost, you need to make sure that you have written your screen goals. You will need to know what you are testing before you can write these scenarios because they determine how you create your scenarios.\n\nThings not to do:\n- Don't create leading scenarios, for example \"click on pay and pay your friend $30 for dinner the other night\" The leading part is using the words \"pay\" as that is what we use in our experience, when users read your tasks they can sometimes be like homing pidgeons and target the key words that they see. \nWith this example, even though you might have a screen goal and you are trying to test the payment flow, asking a leading question like the example above can skew the result.",
+      "screenshot": "02-Creating-your-scenario.png"
+    },
+    {
+      "title": "Set Up Askable Study",
+      "description": "I have created some templates for you to duplicate for your studies, for user testing, this one will be the last one in the list. \nPress the three dots on the right side of the screen and then press duplicate, name your study appropriately and you can get started.",
+      "screenshot": "03-Setting-Up-askable.png"
+    },
+    {
+      "title": "Accepting Participants into the Study + Join Testing Sessions",
+      "description": "When you create your study and launch it. \n\nYou will periodically need to check back in and accept participants into the study. When you do this, each participant will get a link. This is the link that you will click on when you are ready to join your sessions. \n\nThere will also be a link that you can click on, which will be for your moderators the people who are helping you take notes. \nThings to consider\n - Be careful not to share the facilitator link with your moderators. \n - When moderators are joining your sessions, be careful when you accept them, as it doesn't always work, they will need to reload their page and you will need to approve them into the study again. (there is a small glitch in askable) You can tell when someone has successfully joined when you are in the session, though.",
+      "screenshot": "04-JoiningSessions.png"
+    },
+    {
+      "title": "Document User Feedback",
+      "description": "I have put some starters in the file that should be helpful for you to remind your moderators what kind of notes you would like. But the key with note-taking will be making sure that you take the appropriate notes based on your screen goals.\n\n(IMPORTANT)\nAfter each of your sessions, its always good to stop and as a team, whoever has been watching the sessions to reflect on the notes that you took down, and agree on the learning. Sometimes, different people see different things, so this helps to make sure you have everything captured.\n\nThis also makes it easier to summarise the test at the end of the day if you write down your feedback after each session, because all you will need to do is review the summaries that you create.\n\nYou can see a screenshot below of what your screen goals should look like. Remember, you aren't trying to pass or fail users, you are trying to gather insights about how people interact with your designs. Youre looking to see if youre screen goals are true or not.",
+      "screenshots": [
+        "05-DocumentFeelings.png",
+        "05-questions-to-ask.png",
+        "Screenshot 2025-08-08 at 3.41.16â¯pm-1754631679727-388388004.png"
+      ]
+    },
+    {
+      "title": "Compile Final Presentation",
+      "description": "At the end of it all this is what your file in figjam should look like, this will serve as a good artifact to look back on if there was any questions about what informed the design. You could come back to this point and then review the notes and point people to the findings.",
+      "screenshots": [
+        "06-final-product.png",
+        "06-final-product2.png"
+      ]
+    },
+    {
+      "title": "Document Insights",
+      "description": "Arguably one of the most important steps of the entire process, producing your presentation at the end of your study is the vessel to help your stakeholders understand where you are at with the design, concept, etc etc. The goal of this presentation is to share insights, not present raw data about pass and fail.\n\nTo write an effective insight, you will need to process your testing results, consider their implications, and then think through how to communicate this to your stakeholders. \nAn example of a good insight: \"People want to see the details of their payment immediately after making the payment.\" \nAn example of a not so good insight: \"Of the 100 people surveyed, 94% had used a rewards or loyalty offer in the past 6 months. Interestingly 45% of participants said the rewards offers made them spend more than they normally would.\"\n\nYou can see in the not so good insight.",
+      "screenshot": "07-DocumentInsights.png"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "slug": "card-sorting",
+  "title": "Card Sorting",
+  "duration": "1-2 weeks",
+  "participants": "15-30 participants",
+  "complexity": "Low",
+  "purpose": "Understand how users categorize and organize information to inform navigation and content structure.",
+  "tools": [
+    {
+      "name": "OptimalSort",
+      "description": "Card Sorting Platform",
+      "icon": "fa-layer-group"
+    },
+    {
+      "name": "Miro/Figjam",
+      "description": "Physical Card Sorting",
+      "icon": "fa-sticky-note",
+      "logo": "/assets/logos/figma.svg"
+    },
+    {
+      "name": "Spreadsheet",
+      "description": "Data Analysis",
+      "icon": "fa-table"
+    }
+  ],
+  "steps": [
+    "Define Content Categories",
+    "Prepare Cards",
+    "Recruit Participants",
+    "Conduct Sorting Sessions",
+    "Analyze Patterns",
+    "Create Information Architecture",
+    "Validate with Tree Testing"
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "slug": "ab-testing",
+  "title": "A/B Testing",
+  "duration": "2-4 weeks",
+  "participants": "1000+ users",
+  "complexity": "High",
+  "purpose": "Compare two versions of a design or feature to determine which performs better based on real user behaviour and statistical evidence.",
+  "tools": [
+    {
+      "name": "Optimal Workshop",
+      "description": "Running preference tests",
+      "icon": "fa-chart-bar",
+      "link": "https://app.optimalworkshop.com/"
+    },
+    {
+      "name": "Google Analytics",
+      "description": "Live environment testing",
+      "icon": "fa-vial"
+    },
+    {
+      "name": "Figma Slides",
+      "description": "Insights Deck (Max 3 per piece of research)",
+      "icon": "fa-presentation",
+      "logo": "/assets/logos/figma.svg",
+      "link": "https://www.figma.com/slides/RodMmoG77vJztZsM6Z3Ean/2025-Research-Playback?node-id=484-8400&t=2tZP1VJliVSeW8i6-1"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Define Your Hypothesis",
+      "description": "Before you even think about creating variations, you need to be crystal clear about what you're trying to learn. A good hypothesis follows this structure: \"If we [make this change], then [this metric] will [increase/decrease] because [reason based on user behaviour].\"\n\nFor example: \"If we add a self-service option for balance enquiries, then call centre volume will decrease by 20% because customers prefer immediate access to their information.\"\n\nThings to do:\n- Base your hypothesis on real customer feedback or observed behaviour\n- Pick ONE thing to test at a time (don't change the button colour AND the text)\n- Make sure you can actually measure the outcome\n\nThings not to do:\n- Don't test multiple changes at once - you won't know what caused the difference\n- Don't test tiny changes that won't meaningfully impact the customer experience",
+      "screenshot": "",
+      "screenshots": []
+    },
+    {
+      "title": "Choose Your Testing Method",
+      "description": "You've got two main options for A/B testing, and picking the right one depends on what you're testing and where you are in the design process.\n\nOption 1: Preference Testing (Design Phase)\nUse Optimal Workshop when you're still in Figma and want to test design variations before they're built. This is perfect for testing visual changes, copy variations, or layout differences. You'll get quick feedback on which version users prefer and why.\n\nOption 2: Live A/B Testing (Post-Launch)\nUsing analytics when you need to test with real user behaviour in the actual product. This gives you hard data on what users do (not just what they say they prefer). Often this is the only way of knowing for sure which of two designs will be more successful. \n\nThe key difference? Preference testing tells you what users think they'll do. Live testing shows you what they actually do. Both are valuable at different stages.",
+      "screenshot": "",
+      "screenshots": []
+    },
+    {
+      "title": "Create Your Variations",
+      "description": "It's essential when creating the variant that the page or the design isn't too different from the control; your goal is to gain certainty and understanding of what impact specific changes make to a design. If you change too much, you might definitely see that the new version is better, but you aren't sure exactly what improved things.  \n\nVersion A (Control): This is your current design or the baseline version. Don't change anything here - this is what you're comparing against.\n\nVersion B (Variant): This is where you make your ONE change based on your hypothesis. Maybe it's a different button colour, new copy, or a relocated element. \n\nThings to do:\n- Make the difference noticeable enough that it could actually impact behaviour\n- Document exactly what's different between the versions\n\nThings not to do:\n- Don't make the versions so different that they're essentially different designs\n- Don't forget to check both versions work across different screen sizes\n- Don't use Lorem ipsum or fake data - test with real content",
+      "screenshot": "",
+      "screenshots": []
+    },
+    {
+      "title": "Calculate Your Sample Size",
+      "description": "This is where A/B testing gets a bit maths-heavy, but don't worry - we've built a calculator below to help. You need to know how many customers to test with before you can trust your results.\n\nFor preference testing in Optimal Workshop, aim for at least 30-50 responses per variation. This gives you enough data to see clear patterns.\n\nFor live testing in your banking app or website, you'll need to consider:\n- How many customers currently use this feature\n- The minimum difference you want to detect (usually 5-10%)\n- Your confidence level (typically 95%)\n\nA typical banking feature might need 1000-2000 users per variation to detect meaningful changes. If you're testing something with lower usage, you might need to run the test longer.\n\nPro tip: If the calculator says you need 10,000 users per variation and you only get 100 per week, maybe reconsider if A/B testing is the right method. You might be better off with qualitative testing methods.",
+      "screenshot": "",
+      "screenshots": []
+    },
+    {
+      "title": "Set Up Your Test",
+      "description": "The setup is crucial - mess this up and your whole test is compromised.\n\n**For Optimal Workshop:**\n1. Upload both design variations as images\n2. Randomise which version participants see first\n3. Ask the same questions for both versions\n4. Include a question about which they prefer and why\n\n**For Live Testing:**\n1. Use your testing tool to split traffic 50/50\n2. Make sure customers stay in the same group throughout their session\n3. Set up event tracking for your key metrics\n4. Test the setup with your team before going live\n\nCritical things to check:\n- Both versions load properly\n- Tracking is firing correctly\n- Customers can't accidentally see both versions\n- The test works on mobile (unless desktop-only)",
+      "screenshot": "",
+      "screenshots": []
+    },
+    {
+      "title": "Monitor and Measure",
+      "description": "Once your test is live, resist the urge to peek at results every hour. Early results can be misleading due to small sample sizes.\n\n**Week 1:** Check that data is coming through correctly. Look for any technical issues but don't make decisions yet.\n\n**Week 2:** Start to see trends emerging. Still don't make decisions - you need statistical significance.\n\n**Week 3-4:** Usually when you'll hit statistical significance. Now you can start drawing conclusions.\n\nWhat to measure:\n- Primary metric (the one in your hypothesis)\n- Secondary metrics (other things that might be affected)\n- Segments (does it work differently for different customer groups?)\n\nRed flags to watch for:\n- One version has way more traffic (technical issue)\n- Metrics are wildly different from normal (tracking issue)\n- Results flip-flop daily (need more time)\n- Unexpected increase in call centre volume (something might be broken)",
+      "screenshot": "",
+      "screenshots": []
+    },
+    {
+      "title": "Analyse Your Results",
+      "description": "This is the moment of truth. But remember - statistical significance doesn't always mean practical significance.\n\n**Reading Preference Test Results:**\nIn Optimal Workshop, look for:\n- Which version had higher preference (aim for 60%+ for a clear winner)\n- The reasons people gave for their preference\n- Any patterns in the comments\n\n**Reading Live Test Results:**\nYou need THREE things for a valid result:\n1. Statistical significance (95% confidence)\n2. Enough sample size (hit your calculated number)\n3. Test ran for at least 2 weeks (to account for day-of-week effects)\n\nWhat the results mean:\n- Version B wins by 10%+ : Strong winner, implement it\n- Version B wins by 3-5%: Marginal winner, consider if it's worth the effort\n- No significant difference: Both versions are equally effective\n- Version B loses: Stick with version A (this is still valuable learning!)\n\nRemember: Not finding a difference is still a valid result. It means your change didn't impact customer behaviour, which is important to know.",
+      "screenshot": "",
+      "screenshots": []
+    },
+    {
+      "title": "Document and Share Insights",
+      "description": "Don't let your hard work disappear into the void. Document your findings properly so the whole team learns from the test.\n\nYour insights deck should include:\n1. What you tested and why (hypothesis)\n2. What you found (results with numbers)\n3. What it means (implications for customers and business)\n\nTo write an effective insight from A/B testing:\nGood insight: \"Customers are 15% more likely to complete a transfer when the confirmation details are shown upfront, suggesting transparency reduces anxiety about sending money.\"\n\nNot so good insight: \"Version B had a 67% preference rate compared to Version A's 33% rate, with statistical significance at p<0.05.\"\n\nThe good insight tells a story about customer behaviour. The not-so-good one just reports numbers without meaning.\n\nAlways include:\n- Screenshots of both versions\n- The specific metrics and results\n- Recommendations for next steps\n- What you learned about customer behaviour (not just which won)\n\nRemember to add your results to the design file too, so future designers understand why decisions were made.",
+      "screenshot": "",
+      "screenshots": []
+    }
+  ]
+}

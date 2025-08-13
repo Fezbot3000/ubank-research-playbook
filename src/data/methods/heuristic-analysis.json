@@ -1,0 +1,68 @@
+{
+  "slug": "heuristic-analysis",
+  "title": "Heuristic Analysis",
+  "duration": "2-3 days",
+  "participants": "2-3 designers",
+  "complexity": "Low",
+  "purpose": "Quickly identify usability issues by evaluating your designs against established best practices - like having an experienced designer review your work.",
+  "tools": [
+    {
+      "name": "Figjam",
+      "description": "Documenting issues",
+      "icon": "fa-sticky-note",
+      "logo": "/assets/logos/figma.svg",
+      "link": "https://www.figma.com/board/heuristicanalysistemplate"
+    },
+    {
+      "name": "Nielsen's 10 Heuristics",
+      "description": "Evaluation checklist",
+      "icon": "fa-list-check",
+      "link": "https://www.nngroup.com/articles/ten-usability-heuristics/"
+    },
+    {
+      "name": "Figma Slides",
+      "description": "Insights Deck (Max 3 per piece of research)",
+      "icon": "fa-presentation",
+      "logo": "/assets/logos/figma.svg",
+      "link": "https://www.figma.com/slides/RodMmoG77vJztZsM6Z3Ean/2025-Research-Playback?node-id=484-8400&t=2tZP1VJliVSeW8i6-1"
+    }
+  ],
+  "steps": [
+    {
+      "title": "Understand when to use heuristic analysis",
+      "description": "Think of heuristic analysis as getting a fresh pair of experienced eyes on your design. It's not user testing - you won't learn what real customers think. Instead, you're checking if your design follows proven usability principles.\n\nIt's brilliant for:\n- Catching obvious issues before user testing\n- Getting quick feedback when you're too close to the design\n- When you don't have time/budget for user research\n\nIt won't tell you:\n- If customers will actually use a feature\n- If your business logic makes sense\n- How real users behave\n\nThe beauty? You can do it in a couple of days with just your design team.",
+      "screenshot": "",
+      "screenshots": []
+    },
+    {
+      "title": "Set up your review",
+      "description": "You'll need 2-3 designers to review independently (fresh eyes spot different issues).\n\nGive reviewers:\n- Link to the Figma file\n- Brief context about the feature\n- The user journey to test\n- Access to the Figjam template\n\nDon't:\n- Tell them what you think the problems are\n- Have the original designer do the review\n- Rush them - allow at least half a day",
+      "screenshot": "",
+      "screenshots": []
+    },
+    {
+      "title": "Review against Nielsen's heuristics",
+      "description": "Each reviewer checks the design against these 10 principles:\n\n1. Visibility of system status - Does the app show what's happening?\n2. Match real world - Using plain English or banking jargon?\n3. User control - Can customers undo/cancel actions?\n4. Consistency - Do similar things work the same way?\n5. Error prevention - Stopping mistakes before they happen?\n6. Recognition over recall - Can users see their options?\n7. Flexibility - Shortcuts for experienced users?\n8. Aesthetic design - Clean and focused interface?\n9. Error recovery - Helpful error messages?\n10. Help & documentation - Easy to find help?\n\nFor banking, also check:\n- Security visibility - Is data protection clear?\n- Financial transparency - Are fees obvious?\n- Regulatory compliance - Meeting banking rules?",
+      "screenshot": "",
+      "screenshots": []
+    },
+    {
+      "title": "Document issues with severity ratings",
+      "description": "In the Figjam template, for each issue note:\n- Which heuristic it breaks\n- Where it happens (screenshot)\n- Why it's a problem\n- Severity rating\n\nSeverity scale:\n1. Cosmetic - fix if time\n2. Minor - low priority\n3. Major - important but not urgent\n4. Severe - must fix before launch\n5. Catastrophic - blocks users completely\n\nExample:\n\"Transfer screen has no back button (breaks User Control). Severity 4 - customers can't fix mistakes. Add 'Edit' button.\"",
+      "screenshot": "",
+      "screenshots": []
+    },
+    {
+      "title": "Consolidate findings and prioritise",
+      "description": "Bring reviewers together to merge findings. You'll see overlap - that's good, it confirms real issues.\n\nCreate a prioritised list:\n- Must fix (severity 4-5)\n- Should fix (severity 3)\n- Nice to have (severity 1-2)\n\nTurn findings into specific recommendations:\n\"Problem: No daily limit shown on transfers\nImpact: Failed transfers, customer frustration\nSolution: Show 'Daily limit: £10,000' below amount field\nEffort: Small - data already exists\"\n\nGroup by:\n- Quick wins (high impact, low effort)\n- Important fixes (high impact, high effort)\n- Nice-to-haves (low impact)",
+      "screenshot": "",
+      "screenshots": []
+    },
+    {
+      "title": "Present findings and track fixes",
+      "description": "Your presentation should include:\n- Top 3 critical issues with screenshots\n- Quick wins that make a big difference\n- Patterns across the design\n- Clear next steps\n\nDon't dump a spreadsheet - tell a story about improving the customer experience.\n\nAfter presenting:\n- Add critical issues to sprint backlog\n- Assign owners for each fix\n- Track which issues get fixed\n- Share learnings with other teams\n\nRemember: The goal is to improve the design, not show how many problems you found.",
+      "screenshot": "",
+      "screenshots": []
+    }
+  ]
+}

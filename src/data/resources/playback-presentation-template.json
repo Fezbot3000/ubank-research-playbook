@@ -1,0 +1,37 @@
+{
+  "title": "Playback Presentation Template",
+  "sections": [
+    {
+      "title": "Executive Summary",
+      "content": "Key findings and recommendations at a glance:\n• Finding 1: [Brief description]\n• Finding 2: [Brief description]\n• Finding 3: [Brief description]\n\nPrimary recommendation: [One sentence summary]"
+    },
+    {
+      "title": "Research Overview",
+      "content": "Study objectives: [What questions were we trying to answer?]\n\nMethodology: [Research method used]\nParticipants: [Number and key characteristics]\nTimeline: [When the research was conducted]"
+    },
+    {
+      "title": "Key Findings",
+      "content": "Finding 1: [Title]\n• Evidence: [Data/quotes supporting this finding]\n• Impact: [Why this matters]\n• Recommendation: [What to do about it]\n\nFinding 2: [Title]\n• Evidence: [Data/quotes supporting this finding]\n• Impact: [Why this matters]\n• Recommendation: [What to do about it]\n\nFinding 3: [Title]\n• Evidence: [Data/quotes supporting this finding]\n• Impact: [Why this matters]\n• Recommendation: [What to do about it]"
+    },
+    {
+      "title": "Supporting Data",
+      "content": "Quantitative insights:\n• [Metric 1]: [Value and interpretation]\n• [Metric 2]: [Value and interpretation]\n• [Metric 3]: [Value and interpretation]\n\nQualitative themes:\n• Theme 1: [Description and frequency]\n• Theme 2: [Description and frequency]\n• Theme 3: [Description and frequency]"
+    },
+    {
+      "title": "User Quotes",
+      "content": "\"[Impactful quote that illustrates key finding]\"\n- Participant [ID], [relevant demographic]\n\n\"[Another meaningful quote]\"\n- Participant [ID], [relevant demographic]\n\n\"[Third supporting quote]\"\n- Participant [ID], [relevant demographic]"
+    },
+    {
+      "title": "Recommendations",
+      "content": "Immediate actions (0-3 months):\n1. [Specific action item]\n2. [Specific action item]\n3. [Specific action item]\n\nMedium-term improvements (3-6 months):\n1. [Specific action item]\n2. [Specific action item]\n\nLong-term considerations (6+ months):\n1. [Strategic consideration]\n2. [Strategic consideration]"
+    },
+    {
+      "title": "Next Steps",
+      "content": "1. [Who] will [do what] by [when]\n2. [Who] will [do what] by [when]\n3. [Who] will [do what] by [when]\n\nFollow-up research:\n• [Suggested future research topic]\n• [Suggested future research topic]"
+    },
+    {
+      "title": "Appendix",
+      "content": "Additional resources:\n• Full research report: [Link/location]\n• Raw data: [Link/location]\n• Session recordings: [Link/location]\n• Research artifacts: [Link/location]"
+    }
+  ]
+} 

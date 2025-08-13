@@ -1,0 +1,37 @@
+{
+  "title": "Consent Form Template",
+  "sections": [
+    {
+      "title": "Research Study Information",
+      "content": "Study Title: [Your Study Title]\nPrincipal Investigator: [Name]\nOrganization: [Company Name]\nContact: [Email/Phone]"
+    },
+    {
+      "title": "Purpose of the Study",
+      "content": "You are being invited to participate in a research study to help us understand [brief description of study purpose]. Your participation will help us [expected outcomes/benefits]."
+    },
+    {
+      "title": "What Will Happen",
+      "content": "If you agree to participate:\n• You will take part in a [interview/usability test/survey] lasting approximately [duration]\n• We will ask you questions about [topics]\n• The session will be [recorded/observed] for analysis purposes\n• You may be asked to share your screen or perform specific tasks"
+    },
+    {
+      "title": "Voluntary Participation",
+      "content": "Your participation is entirely voluntary. You may:\n• Decline to answer any question\n• Take breaks as needed\n• Withdraw from the study at any time without penalty\n• Request deletion of your data within 30 days of participation"
+    },
+    {
+      "title": "Privacy and Confidentiality",
+      "content": "• Your identity will be kept confidential\n• Data will be anonymized and stored securely\n• Only authorized research team members will have access\n• Results may be shared internally or published, but will not identify you\n• Recordings will be deleted after [timeframe]"
+    },
+    {
+      "title": "Data Protection Rights (GDPR)",
+      "content": "Under GDPR, you have the right to:\n• Access your personal data\n• Correct inaccurate data\n• Request deletion of your data\n• Restrict processing of your data\n• Object to data processing\n• Data portability\n\nTo exercise these rights, contact: [Data Protection Officer contact]"
+    },
+    {
+      "title": "Compensation",
+      "content": "[If applicable] You will receive [compensation details] for your participation."
+    },
+    {
+      "title": "Consent Statement",
+      "content": "By signing below, I confirm that:\n• I have read and understood the information above\n• I have had the opportunity to ask questions\n• I understand my participation is voluntary\n• I agree to participate in this research study\n• I agree to be [audio/video] recorded\n\nParticipant Name: _________________\nSignature: _________________\nDate: _________________\n\nResearcher Name: _________________\nSignature: _________________\nDate: _________________"
+    }
+  ]
+} 

@@ -1,0 +1,35 @@
+{
+  "slug": "diary-study",
+  "title": "Diary Study",
+  "duration": "2-4 weeks",
+  "participants": "8-15 participants",
+  "complexity": "High",
+  "purpose": "Understand user behaviors, motivations, and experiences over time in their natural environment.",
+  "tools": [
+    {
+      "name": "dscout",
+      "description": "Mobile Diary Platform",
+      "icon": "fa-mobile-alt"
+    },
+    {
+      "name": "UserTesting",
+      "description": "Video Diaries",
+      "icon": "fa-video"
+    },
+    {
+      "name": "WhatsApp",
+      "description": "Simple Text Diaries",
+      "icon": "fa-comment"
+    }
+  ],
+  "steps": [
+    "Define Research Questions",
+    "Design Diary Format",
+    "Recruit Committed Participants",
+    "Onboard & Train Participants",
+    "Monitor Submissions",
+    "Conduct Follow-up Interviews",
+    "Analyze Patterns Over Time",
+    "Create Journey Maps"
+  ]
+}

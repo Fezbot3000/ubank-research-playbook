@@ -1,0 +1,34 @@
+{
+  "slug": "tree-testing",
+  "title": "Tree Testing",
+  "duration": "1 week",
+  "participants": "20-50 participants",
+  "complexity": "Low",
+  "purpose": "Test navigation structures and information architecture without visual design distractions.",
+  "tools": [
+    {
+      "name": "Treejack",
+      "description": "Tree Testing Platform",
+      "icon": "fa-sitemap"
+    },
+    {
+      "name": "OptimalSort",
+      "description": "Alternative Platform",
+      "icon": "fa-layer-group"
+    },
+    {
+      "name": "Maze",
+      "description": "Integrated Testing",
+      "icon": "fa-puzzle-piece"
+    }
+  ],
+  "steps": [
+    "Define Find-ability Tasks",
+    "Set Up Tree Structure",
+    "Write Task Scenarios",
+    "Recruit Participants",
+    "Run Test",
+    "Analyze Success Rates",
+    "Refine Navigation"
+  ]
+}

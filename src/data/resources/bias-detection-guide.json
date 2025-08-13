@@ -1,0 +1,37 @@
+{
+  "title": "Bias Detection Guide",
+  "sections": [
+    {
+      "title": "Confirmation Bias",
+      "content": "What it is: Seeking or interpreting information that confirms pre-existing beliefs.\n\nHow to detect:\n• Are you only highlighting findings that support your hypothesis?\n• Did you dismiss contradictory evidence too quickly?\n• Are stakeholders only interested in certain outcomes?\n\nHow to avoid:\n• Actively seek disconfirming evidence\n• Include devil's advocate in analysis sessions\n• Document all findings, not just supportive ones\n• Use structured analysis frameworks"
+    },
+    {
+      "title": "Selection Bias",
+      "content": "What it is: Participants don't represent your actual user base.\n\nHow to detect:\n• Is your sample too homogeneous?\n• Are certain user groups over/underrepresented?\n• Did recruitment methods exclude certain populations?\n\nHow to avoid:\n• Define clear recruitment criteria\n• Use multiple recruitment channels\n• Track participant demographics\n• Consider edge cases and extreme users"
+    },
+    {
+      "title": "Anchoring Bias",
+      "content": "What it is: Over-relying on the first piece of information encountered.\n\nHow to detect:\n• Are early findings dominating your analysis?\n• Is one memorable quote overshadowing patterns?\n• Did initial assumptions go unchallenged?\n\nHow to avoid:\n• Randomize order of data review\n• Weight all evidence equally\n• Challenge initial interpretations\n• Use systematic coding methods"
+    },
+    {
+      "title": "Social Desirability Bias",
+      "content": "What it is: Participants give answers they think you want to hear.\n\nHow to detect:\n• Answers seem too positive or agreeable\n• Behavior doesn't match stated preferences\n• Participants reluctant to criticize\n\nHow to avoid:\n• Use indirect questioning techniques\n• Observe behavior, not just opinions\n• Create safe space for honest feedback\n• Triangulate with multiple data sources"
+    },
+    {
+      "title": "Recency Bias",
+      "content": "What it is: Giving more weight to recent events or last participants.\n\nHow to detect:\n• Final sessions influencing conclusions disproportionately\n• Earlier insights being forgotten\n• Recent examples dominating recommendations\n\nHow to avoid:\n• Document insights immediately\n• Review all sessions before analysis\n• Use structured note-taking\n• Create rolling synthesis documents"
+    },
+    {
+      "title": "Framing Bias",
+      "content": "What it is: How questions are asked influences responses.\n\nHow to detect:\n• Leading questions in your protocol\n• Assumptions built into question wording\n• Binary choices limiting responses\n\nHow to avoid:\n• Use open-ended questions\n• Pilot test question wording\n• Ask same concept multiple ways\n• Let participants use their own words"
+    },
+    {
+      "title": "Availability Heuristic",
+      "content": "What it is: Overestimating importance of easily recalled information.\n\nHow to detect:\n• Vivid examples dominating analysis\n• Edge cases seeming more common\n• Dramatic moments overshadowing patterns\n\nHow to avoid:\n• Count frequency systematically\n• Look for patterns, not just memorable moments\n• Use affinity mapping techniques\n• Validate with quantitative data"
+    },
+    {
+      "title": "Bias Mitigation Checklist",
+      "content": "Before research:\n□ Diverse research team assembled\n□ Assumptions documented\n□ Protocol reviewed for leading questions\n\nDuring research:\n□ Consistent process followed\n□ All participants treated equally\n□ Observer notes kept separate\n\nDuring analysis:\n□ Multiple coders involved\n□ Contradictions explored\n□ Patterns quantified\n□ Confidence levels noted\n\nReporting:\n□ Limitations acknowledged\n□ Methodology transparent\n□ Alternative interpretations considered"
+    }
+  ]
+} 

@@ -1,0 +1,36 @@
+{
+  "slug": "benchmarking-analysis",
+  "title": "Benchmarking Analysis",
+  "duration": "1-2 weeks",
+  "participants": "Research team",
+  "complexity": "Medium",
+  "purpose": "Compare your product against competitors to identify opportunities and industry best practices.",
+  "tools": [
+    {
+      "name": "Spreadsheet",
+      "description": "Feature Comparison",
+      "icon": "fa-table"
+    },
+    {
+      "name": "Screen Capture",
+      "description": "Visual Documentation",
+      "icon": "fa-camera"
+    },
+    {
+      "name": "Miro/Figjam",
+      "description": "Analysis Board",
+      "icon": "fa-sticky-note",
+      "logo": "/assets/logos/figma.svg"
+    }
+  ],
+  "steps": [
+    "Identify Competitors",
+    "Define Evaluation Criteria",
+    "Conduct Feature Audit",
+    "Analyze User Flows",
+    "Document Patterns",
+    "Identify Opportunities",
+    "Create Recommendation Report",
+    "Share Insights with Team"
+  ]
+}
