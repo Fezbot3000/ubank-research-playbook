@@ -30,7 +30,7 @@
       "description": "Work out what it is that you want to test, it could be any of the following;\n\n- Copy\n- Icons or something visual\n- It could be a collection of items on a page that builds the overall comprehension of a page that you are looking to test\n\nIn the example below, you can see a screenshot of the rate breakdown page. In this example, the comprehension test that was run was to understand if users could piece all the information on the page together and recite back to us what they understood. We were looking to measure if they could replay back to us accurately what the page was trying to communicate, just with the information on the page.  ",
       "screenshot": "",
       "screenshots": [
-        "Screenshot 2025-08-11 at 2.17.13\u00e2\u0080\u00afpm-1754885835699-758013025.png"
+        "Screenshot 2025-08-11 at 2.17.13pm-1754885835699-758013025.png"
       ]
     },
     {
@@ -38,7 +38,7 @@
       "description": "Open up Optimal workshop (Link above) and duplicate the comprehension study that will already be in there. This will set up the foundations of the study so all you will need to do is add your specific questions.",
       "screenshot": "",
       "screenshots": [
-        "Screenshot 2025-08-11 at 3.12.26\u00e2\u0080\u00afpm-1754889150852-893255842.png"
+        "Screenshot 2025-08-11 at 3.12.26pm-1754889150852-893255842.png"
       ]
     },
     {
@@ -52,8 +52,8 @@
       "description": "Often, with comprehension studies, you might need to run the test a few times, which would involve repeating the steps above. \n\nTo determine this, you will need to assess if the result of your test got a result of 85% - 90% or above for each of the questions you asked. If it did, you can safely say that based on the results, participants comprehend what you are presenting. If it got a lower result, it's worth making changes to your design and rerunning it to see if you can improve the result. \n\nAdditionally, combining both the result of the individual questions and the confidence level can give you a strong indication of what is going on. \n\nFor example, users might get a strong comprehension result, but their confidence level was low, which rarely happens, but this does mean that users could probably guess the answer, or they knew the answer but just weren't really confident. \n\nA design that achieves a high confidence level and also a high correct answer response is the desired outcome here. \n\nThe two screenshots below show you two tests that were run at the same time in the form of an A/B test. You can see it in the first screenshot, version A had 30% of people who didn't understand or were confused, but in the B test, the percentage of people who were confused decreased to only 7.1%. \nThe second test also had a successful answer rate of 90%, vs 72% on test A. This is the sort of result you need to aim for when reviewing your results. Anything less than this could result in unnecessary calls to the call centre from confused individuals. \n",
       "screenshot": "",
       "screenshots": [
-        "Screenshot 2025-08-11 at 3.29.06\u00e2\u0080\u00afpm-1754890151158-953673132.png",
-        "Screenshot 2025-08-11 at 3.29.42\u00e2\u0080\u00afpm-1754890186235-55322304.png"
+        "Screenshot 2025-08-11 at 3.29.06pm-1754890151158-953673132.png",
+        "Screenshot 2025-08-11 at 3.29.42pm-1754890186235-55322304.png"
       ]
     },
     {
@@ -67,7 +67,7 @@
       "description": "Arguably one of the most important steps of the entire process, producing your presentation at the end of your study is the vessel to help your stakeholders understand where you are at with the design, concept, etc etc. The goal of this presentation is to share insights, not present raw data about pass and fail.\n\nTo write an effective insight, you will need to process your testing results, consider their implications, and then think through how to communicate this to your stakeholders. \nAn example of a good insight: \"People want to see the details of their payment immediately after making the payment.\" \nAn example of a not so good insight: \"Of the 100 people surveyed, 94% had used a rewards or loyalty offer in the past 6 months. Interestingly 45% of participants said the rewards offers made them spend more than they normally would.\"\n\nYou can see in the \"not so good\" insight that it requires the reader to process the result and discover meaning from that result. This is the job of your insights, to have done that processing for the reader and be able to share the \"so what\" so they can take your insight and be able to make a decision based on it. \n\nPlease aim for no more than 3 insights per slide deck, you want to summarise the test into a maximum of 3 key takeaways that your audience can take and action. ",
       "screenshot": "",
       "screenshots": [
-        "Screenshot 2025-08-11 at 3.40.45\u00e2\u0080\u00afpm-1754890849186-730909855.png"
+        "Screenshot 2025-08-11 at 3.40.45pm-1754890849186-730909855.png"
       ]
     }
   ]
