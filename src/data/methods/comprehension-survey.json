@@ -12,7 +12,7 @@
       "icon": "fa-clipboard-list"
     },
     {
-      "name": "UserTesting",
+      "name": "Askable",
       "description": "Recruiting your participants",
       "icon": "fa-video"
     },
@@ -24,6 +24,15 @@
     }
   ],
   "steps": [
+    {
+      "title": "Set Up Askable Study",
+      "description": "1. I have created some templates for you to duplicate for your studies, for a comprehension study, this one will be the third one in the list. \nPress the three dots on the right side of the screen and then press duplicate, name your study appropriately and you can get started.\n\n2. I have added some default questions that will get you started, but your goal here is to add custom screening questions that target the specific people you want to test with. \n\nConsiderations\n - Askable mandates that you need to have at least a few screener questions, they don't like it when we leave these blank and will block your study from going live. \n - If you want to go live with your study that day, make sure you go live with it at the latest before 3 pm, to have a chance for Askable to approve it before the end of the day. I will have a guide on what kind of screener questions you can ask. ",
+      "screenshot": "",
+      "screenshots": [
+        "Screenshot 2025-08-13 at 3.49.47â¯pm-1755064192134-667380268.png"
+      ],
+      "link": ""
+    },
     {
       "title": "Assess the screen",
       "description": "Work out what it is that you want to test, it could be any of the following;\n\n- Copy\n- Icons or something visual\n- It could be a collection of items on a page that builds the overall comprehension of a page that you are looking to test\n\nIn the example below, you can see a screenshot of the rate breakdown page. In this example, the comprehension test that was run was to understand if users could piece all the information on the page together and recite back to us what they understood. We were looking to measure if they could replay back to us accurately what the page was trying to communicate, just with the information on the page.  ",

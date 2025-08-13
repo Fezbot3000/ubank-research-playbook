@@ -30,6 +30,7 @@ interface Step {
   diagram?: Diagram;
   screenshot?: string;
   screenshots?: string[];
+  link?: string;
 }
 
 interface Screenshot {
@@ -640,7 +641,8 @@ export default function MethodPage() {
                     title: 'New Step',
                     description: 'Step description',
                     screenshot: '',
-                    screenshots: []
+                    screenshots: [],
+                    link: ''
                   }];
                   updateData('steps', newSteps);
                 }}
@@ -657,7 +659,7 @@ export default function MethodPage() {
             )}
           </div>
         </div>
-        <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--spacing-lg)' }}>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 'calc(var(--spacing-xl) * 2)' }}>
           {data.steps.map((step, index) => {
             const isStringStep = typeof step === 'string';
             const stepData = isStringStep ? { title: step } : step;
@@ -667,6 +669,7 @@ export default function MethodPage() {
                 display: 'flex', 
                 gap: 'var(--spacing-md)',
                 paddingLeft: window.innerWidth < 768 ? '0' : 'var(--spacing-md)',
+                paddingBottom: 'var(--spacing-lg)',
                 position: 'relative'
               }}>
                 {isEditMode && (
@@ -776,6 +779,60 @@ export default function MethodPage() {
                       }}
                       multiline
                     />
+                  )}
+                  {!isStringStep && (
+                    <>
+                      {isEditMode && (
+                        <div style={{ marginBottom: 'var(--spacing-md)' }}>
+                          <label style={{ 
+                            display: 'block', 
+                            marginBottom: 'var(--spacing-xs)',
+                            fontSize: 'var(--font-sm)',
+                            color: 'var(--color-text-secondary)'
+                          }}>
+                            Link (optional)
+                          </label>
+                          <input
+                            type="url"
+                            value={step.link || ''}
+                            onChange={(e) => {
+                              const newSteps = [...data.steps];
+                              (newSteps[index] as Step).link = e.target.value;
+                              updateData('steps', newSteps);
+                            }}
+                            placeholder="https://example.com"
+                            style={{ 
+                              width: '100%',
+                              padding: 'var(--spacing-xs) var(--spacing-sm)',
+                              border: '1px solid var(--color-border)',
+                              borderRadius: 'var(--border-radius-sm)',
+                              backgroundColor: 'var(--color-background)',
+                              fontSize: 'var(--font-sm)',
+                              color: 'var(--color-text)'
+                            }}
+                          />
+                        </div>
+                      )}
+                      {!isEditMode && step.link && (
+                        <a 
+                          href={step.link} 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          style={{
+                            display: 'inline-flex',
+                            alignItems: 'center',
+                            gap: 'var(--spacing-xs)',
+                            color: 'var(--color-primary)',
+                            textDecoration: 'none',
+                            marginBottom: 'var(--spacing-md)',
+                            fontSize: 'var(--font-sm)'
+                          }}
+                        >
+                          <Icon name="external-link" size={16} />
+                          View Resource
+                        </a>
+                      )}
+                    </>
                   )}
                   {!isStringStep && step.diagram && (
                     <Card variant="filled" style={{ marginTop: 'var(--spacing-md)' }}>
@@ -995,7 +1052,8 @@ export default function MethodPage() {
                   title: 'New Step',
                   description: 'Step description',
                   screenshot: '',
-                  screenshots: []
+                  screenshots: [],
+                  link: ''
                 }];
                 updateData('steps', newSteps);
               }}

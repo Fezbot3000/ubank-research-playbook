@@ -70,8 +70,12 @@ export default function HomePage() {
     <div>
       {/* Hero Section */}
       <section className="hero-section">
-        <h1 className="hero-title">
-          UBank Research Playbook
+        <h1 style={{ 
+          fontSize: 'var(--font-size-xxl)', 
+          marginBottom: 'var(--spacing-md)',
+          textAlign: 'center'
+        }}>
+          Ubank Research Playbook
         </h1>
         <p className="hero-description">
           Your comprehensive guide to conducting effective user research. 

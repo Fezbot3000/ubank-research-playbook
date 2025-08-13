@@ -1,6 +1,6 @@
-# UBank Research Playbook - Integrated Version
+# Ubank Research Playbook - Integrated Version
 
-A modern, interactive research methodology guide built with React and a custom design system.
+A comprehensive research methods playbook designed to help teams choose and implement the right research methods for their projects.
 
 ## Overview
 

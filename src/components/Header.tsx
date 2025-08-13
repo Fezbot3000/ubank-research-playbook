@@ -121,7 +121,13 @@ export default function Header() {
       <header style={headerStyles.container}>
         <div style={headerStyles.logo}>
           <Link to="/" style={headerStyles.logoLink}>
-            {isMobile ? 'UBank' : 'UBank Research Playbook'}
+            <h1 style={{ 
+              fontSize: 'var(--font-size-lg)', 
+              fontWeight: 600,
+              margin: 0
+            }}>
+              {isMobile ? 'Ubank' : 'Ubank Research Playbook'}
+            </h1>
           </Link>
         </div>
         

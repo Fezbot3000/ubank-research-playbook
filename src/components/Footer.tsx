@@ -7,12 +7,8 @@ export default function Footer() {
       textAlign: 'center',
       marginTop: 'auto'
     }}>
-      <p style={{ 
-        margin: 0,
-        color: 'var(--color-text-tertiary)',
-        fontSize: 'var(--font-sm)'
-      }}>
-        © 2024 UBank Research Playbook. Built with care for better user research.
+      <p style={{ margin: 0, fontSize: 'var(--font-size-sm)', color: 'var(--color-text-secondary)' }}>
+        © 2024 Ubank Research Playbook. Built with care for better user research.
       </p>
     </footer>
   );

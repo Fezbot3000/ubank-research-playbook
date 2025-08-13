@@ -13,12 +13,6 @@
       "link": "https://askable.com/"
     },
     {
-      "name": "UserTesting",
-      "description": "Unmoderated testing platform",
-      "icon": "fa-mouse-pointer",
-      "link": "https://app.usertesting.com/"
-    },
-    {
       "name": "Figma Slides",
       "description": "Insights Deck (Max 3 per piece of research)",
       "icon": "fa-presentation",
