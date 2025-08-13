@@ -1,0 +1,181 @@
+/* Responsive styles using design system tokens */
+
+/* Mobile-first responsive utilities */
+@media (max-width: 767px) {
+  /* Typography adjustments for mobile readability */
+  body {
+    font-size: 1.125rem; /* 18px base */
+    line-height: 1.65;
+  }
+  
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.75rem; }
+  h3 { font-size: 1.5rem; }
+  h4 { font-size: 1.25rem; }
+  h5, h6 { font-size: 1.125rem; }
+  
+  /* Tighter spacing on mobile */
+  :root {
+    --spacing-xs: 0.25rem;  /* 4px */
+    --spacing-sm: 0.375rem; /* 6px */
+    --spacing-md: 0.5rem;   /* 8px */
+    --spacing-lg: 0.75rem;  /* 12px */
+    --spacing-xl: 1rem;     /* 16px */
+    --spacing-2xl: 1.5rem;  /* 24px */
+    --spacing-3xl: 2rem;    /* 32px */
+  }
+  
+  /* Container padding */
+  .hero-section,
+  .methods-section {
+    padding: var(--spacing-xl) var(--spacing-md);
+  }
+  
+  /* Grid adjustments */
+  .method-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-sm);
+  }
+  
+  .resource-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-sm);
+  }
+  
+  /* Card adjustments */
+  .method-card {
+    padding: var(--spacing-lg);
+  }
+  
+  .method-card h3 {
+    font-size: 1.125rem;
+  }
+  
+  /* Hero adjustments */
+  .hero-title {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+  
+  .hero-description {
+    font-size: 1.125rem;
+  }
+  
+  /* Button adjustments */
+  button, .button {
+    min-height: 48px;
+    padding: 0.875rem 1.5rem;
+    font-size: 1rem;
+  }
+  
+  /* Form adjustments */
+  input, textarea, select {
+    min-height: 48px;
+    font-size: 16px; /* Prevents zoom on iOS */
+  }
+  
+  /* Step layout adjustments */
+  .step-container {
+    padding-left: 0;
+  }
+  
+  .step-number {
+    width: 24px;
+    height: 24px;
+    font-size: 0.75rem;
+  }
+  
+  /* Modal adjustments */
+  .modal-content {
+    width: calc(100% - 2rem);
+    margin: 1rem;
+    max-height: calc(100vh - 2rem);
+  }
+  
+  /* Table responsiveness */
+  .table-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  table {
+    min-width: 100%;
+  }
+}
+
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+  /* Ensure touch targets are at least 44x44 */
+  a, button, input, select, textarea, [role="button"] {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  /* Remove hover states on touch devices */
+  a:hover, button:hover {
+    background-color: inherit;
+  }
+}
+
+/* Landscape mobile adjustments */
+@media (max-width: 767px) and (orientation: landscape) {
+  .hero-title {
+    font-size: 1.75rem;
+  }
+  
+  section {
+    padding-top: var(--spacing-lg);
+    padding-bottom: var(--spacing-lg);
+  }
+}
+
+/* Tablet adjustments */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .method-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .resource-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Desktop enhancements */
+@media (min-width: 1024px) {
+  .method-grid {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+/* High DPI screen adjustments */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /* Ensure crisp borders and text */
+  * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Print styles */
+@media print {
+  /* Hide navigation and interactive elements */
+  header, nav, button, .theme-toggle {
+    display: none;
+  }
+  
+  /* Ensure content uses full width */
+  body {
+    font-size: 12pt;
+    line-height: 1.5;
+  }
+  
+  /* Avoid page breaks inside elements */
+  .card, .step-container {
+    page-break-inside: avoid;
+  }
+} 

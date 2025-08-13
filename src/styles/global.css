@@ -5,15 +5,37 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Hide scrollbars globally */
+/* Chrome, Safari and Opera */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: none;
+}
+
+/* IE and Edge */
+* {
+  -ms-overflow-style: none;
+}
+
+/* Ensure scrolling still works */
+html, body {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
 :root {
-  /* Spacing */
+  /* Spacing - Reduced for tighter gutters */
   --spacing-xs: 0.25rem;
   --spacing-sm: 0.5rem;
-  --spacing-md: 1rem;
-  --spacing-lg: 1.5rem;
-  --spacing-xl: 2rem;
-  --spacing-2xl: 3rem;
-  --spacing-3xl: 4rem;
+  --spacing-md: 0.75rem;
+  --spacing-lg: 1rem;
+  --spacing-xl: 1.5rem;
+  --spacing-2xl: 2rem;
+  --spacing-3xl: 3rem;
 
   /* Font Sizes */
   --font-xs: 0.75rem;
@@ -119,6 +141,14 @@ body {
   padding: 0;
 }
 
+/* Mobile container padding */
+@media (max-width: 767px) {
+  main, .page-content {
+    padding-left: var(--spacing-md);
+    padding-right: var(--spacing-md);
+  }
+}
+
 /* Ensure light theme by default */
 :root {
   color-scheme: light;
@@ -192,6 +222,281 @@ body[data-edit-mode="true"] {
   white-space: nowrap;
   border-width: 0;
 } 
+
+/* Hero section styles */
+.hero-section {
+  text-align: center;
+  padding: var(--spacing-2xl) var(--spacing-lg);
+  background-color: var(--color-background);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero-title {
+  font-size: var(--font-4xl);
+  margin-bottom: var(--spacing-md);
+  color: var(--color-text-primary);
+  font-weight: var(--font-weight-bold);
+}
+
+.hero-description {
+  font-size: var(--font-lg);
+  color: var(--color-text-secondary);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Methods section styles */
+.methods-section {
+  padding: var(--spacing-2xl) var(--spacing-lg);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.methods-section h2 {
+  text-align: center;
+  margin-bottom: var(--spacing-lg);
+  color: var(--color-text-primary);
+}
+
+.methods-section p {
+  text-align: center;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--spacing-xl);
+  max-width: 600px;
+  margin: 0 auto var(--spacing-xl);
+}
+
+.method-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--spacing-md);
+}
+
+/* Method card styles */
+.method-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-md);
+  padding: var(--spacing-xl);
+  text-align: center;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  border: 1px solid var(--color-border);
+  background-color: var(--color-background);
+}
+
+.method-card:hover {
+  background-color: var(--color-background-secondary);
+  border-color: var(--color-primary);
+}
+
+.method-card h3 {
+  color: var(--color-text-primary);
+  font-size: var(--font-sm);
+  font-weight: var(--font-weight-medium);
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Icon container styles */
+[data-icon-container] {
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius-lg);
+  background-color: var(--color-background-secondary);
+  border: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.method-card:hover [data-icon-container] {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+/* Resource grid styles */
+.resource-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.resource-card {
+  padding: var(--spacing-xl);
+}
+
+.resource-card h3 {
+  margin: 0;
+  font-size: var(--font-xl);
+}
+
+.resource-card p {
+  color: var(--color-text-secondary);
+  margin-bottom: var(--spacing-md);
+}
+
+/* Checkbox styles */
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  accent-color: var(--color-primary);
+  flex-shrink: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: var(--color-background);
+  border: 2px solid var(--color-border);
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+input[type="checkbox"]:hover {
+  border-color: var(--color-primary);
+}
+
+input[type="checkbox"]:checked {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+input[type="checkbox"]:checked::after {
+  content: '✓';
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Mobile checkbox sizing */
+@media (max-width: 767px) {
+  input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    min-width: 18px;
+    min-height: 18px;
+  }
+  
+  input[type="checkbox"]:checked::after {
+    font-size: 12px;
+  }
+}
+
+/* Step-specific checkbox styles */
+.step-checkbox {
+  margin-right: var(--spacing-sm);
+}
+
+/* Step container styles */
+.step-container {
+  display: flex;
+  gap: var(--spacing-md);
+  padding-left: var(--spacing-md);
+  position: relative;
+}
+
+.step-number {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  color: var(--color-text-on-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: var(--font-weight-bold);
+  flex-shrink: 0;
+}
+
+/* Container styles */
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 var(--spacing-xl);
+}
+
+.page-content {
+  padding: var(--spacing-xl);
+}
+
+/* Breadcrumb styles */
+.breadcrumb-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-md);
+  padding: var(--spacing-sm) 0;
+  font-size: var(--font-sm);
+  color: var(--color-text-secondary);
+  margin-bottom: var(--spacing-lg);
+}
+
+.breadcrumb-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: var(--spacing-xs);
+  flex-wrap: wrap;
+  flex: 1;
+}
+
+.breadcrumb-item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+}
+
+.breadcrumb-link {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: opacity 0.2s;
+  white-space: nowrap;
+}
+
+.breadcrumb-link:hover {
+  opacity: 0.8;
+}
+
+.breadcrumb-current {
+  color: var(--color-text-primary);
+  white-space: nowrap;
+}
+
+/* Mobile breadcrumb adjustments */
+@media (max-width: 767px) {
+  .breadcrumb-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-sm);
+  }
+  
+  .breadcrumb-list {
+    font-size: 0.875rem;
+  }
+  
+  /* Hide "Research Methods" text on mobile to save space */
+  .breadcrumb-item:first-child .breadcrumb-link {
+    max-width: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
 
 /* EditableText Component Styles */
 .editable-text {

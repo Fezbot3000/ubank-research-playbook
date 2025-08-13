@@ -16,11 +16,7 @@ export default function Layout({ children }: LayoutProps) {
     }}>
       <Header />
       <main style={{ 
-        flex: 1,
-        padding: 'var(--spacing-lg) var(--spacing-xl)',
-        maxWidth: '1200px',
-        margin: '0 auto',
-        width: '100%'
+        flex: 1
       }}>
         {children}
       </main>

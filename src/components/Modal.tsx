@@ -40,6 +40,7 @@ const Modal: React.FC<ModalProps> = ({
     <Scrim onScrimClick={onClose}>
       <Card 
         onClick={(e) => e.stopPropagation()}
+        className="modal-content"
         style={{
           maxWidth: '600px',
           width: '90%',
@@ -56,7 +57,7 @@ const Modal: React.FC<ModalProps> = ({
           paddingBottom: 'var(--spacing-md)',
           borderBottom: '1px solid var(--color-border)'
         }}>
-          <h3 style={{ margin: 0 }}>{title}</h3>
+          <h3 className="modal-header" style={{ margin: 0 }}>{title}</h3>
           {showCloseButton && (
             <Button
               variant="ghost"
@@ -69,7 +70,7 @@ const Modal: React.FC<ModalProps> = ({
             </Button>
           )}
         </div>
-        <div>
+        <div className="modal-body">
           {children}
         </div>
       </Card>

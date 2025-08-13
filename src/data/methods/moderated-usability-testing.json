@@ -10,21 +10,18 @@
       "name": "Askable",
       "description": "Recruitment & Moderation",
       "icon": "fa-users",
-      "logo": "/assets/logos/askable.svg",
       "link": "https://app.askable.com/studies"
     },
     {
       "name": "Figma Slides",
       "description": "Insights Presentation",
       "icon": "fa-presentation",
-      "logo": "/assets/logos/figma.svg",
       "link": "https://www.figma.com/slides/RodMmoG77vJztZsM6Z3Ean/2025-Research-Playback?node-id=0-1&t=nlOtgNcANnRzEIU2-1"
     },
     {
       "name": "Figjam",
       "description": "User Testing Notes",
       "icon": "fa-sticky-note",
-      "logo": "/assets/logos/figma.svg",
       "link": "https://www.figma.com/board/fqIVeexVfMkLLeFw0kezPF/2025-Usability-testing---Project-repository?node-id=3-2633&t=IILy0onEhyPwDd8l-1"
     }
   ],

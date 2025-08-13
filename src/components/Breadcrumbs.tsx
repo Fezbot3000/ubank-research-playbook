@@ -71,7 +71,10 @@ export default function Breadcrumbs() {
     // Handle different routes
     if (pathSegments[0] === 'methods' && slug) {
       // Method page: Research Methods > [Method Name]
-      breadcrumbs.push({ label: 'Research Methods', path: '/#methods' });
+      breadcrumbs.push({ 
+        label: window.innerWidth < 768 ? 'Methods' : 'Research Methods', 
+        path: '/#methods' 
+      });
       
       const method = dynamicMethods.find(m => m.slug === slug);
       if (method) {
@@ -85,21 +88,28 @@ export default function Breadcrumbs() {
         breadcrumbs.push({ label: 'Method Not Found' });
       }
     } else if (pathSegments[0] === 'resources') {
-      // Resources page or individual resource
-      breadcrumbs.push({ label: 'Resources', path: '/resources' });
-      
-      if (slug) {
-        // Individual resource page
-        const resource = resources.find(r => r.slug === slug);
+      if (pathSegments[1]) {
+        // Resource detail page
+        breadcrumbs.push({ 
+          label: window.innerWidth < 768 ? 'Resources' : 'Resources & Templates', 
+          path: '/resources' 
+        });
+        
+        const resource = resources.find(r => r.slug === pathSegments[1]);
         if (resource) {
           breadcrumbs.push({ label: resource.title });
-        } else {
-          breadcrumbs.push({ label: 'Resource Not Found' });
         }
+      } else {
+        // Resources list page: Just show Resources & Templates
+        breadcrumbs.push({ 
+          label: window.innerWidth < 768 ? 'Resources' : 'Resources & Templates' 
+        });
       }
     } else if (pathSegments[0] === 'analysis') {
       // Analysis page: Just show Decision Tree Analysis
-      breadcrumbs.push({ label: 'Decision Tree Analysis' });
+      breadcrumbs.push({ 
+        label: window.innerWidth < 768 ? 'Analysis' : 'Decision Tree Analysis' 
+      });
     }
 
     return breadcrumbs;
@@ -113,137 +123,165 @@ export default function Breadcrumbs() {
   }
 
   return (
-    <nav aria-label="Breadcrumb" style={{
-      padding: 'var(--spacing-md) 0',
+    <div style={{
+      marginBottom: 'var(--spacing-lg)',
+      padding: 'var(--spacing-sm) 0',
       fontSize: 'var(--font-sm)',
-      color: 'var(--color-text-secondary)',
-      display: 'flex',
-      alignItems: 'center',
-      gap: 'var(--spacing-xs)'
+      color: 'var(--color-text-secondary)'
     }}>
-      <ol style={{
-        listStyle: 'none',
-        padding: 0,
-        margin: 0,
-        display: 'flex',
+      {/* Breadcrumb Navigation */}
+      <nav aria-label="Breadcrumb" style={{ 
+        display: 'flex', 
         alignItems: 'center',
-        gap: 'var(--spacing-xs)'
+        justifyContent: 'space-between',
+        gap: 'var(--spacing-md)'
       }}>
-        {breadcrumbs.map((crumb, index) => (
-          <li key={index} style={{ display: 'flex', alignItems: 'center', gap: 'var(--spacing-xs)' }}>
-            {index > 0 && (
-              <Icon name="chevron-right" size={16} color="var(--color-text-tertiary)" />
-            )}
-            {crumb.path ? (
-              <Link 
-                to={crumb.path} 
-                style={{ 
-                  color: 'var(--color-primary)', 
-                  textDecoration: 'none',
-                  transition: 'opacity 0.2s',
-                }}
-                onMouseEnter={(e) => e.currentTarget.style.opacity = '0.8'}
-                onMouseLeave={(e) => e.currentTarget.style.opacity = '1'}
-              >
-                {crumb.label}
-              </Link>
-            ) : (
-              <span style={{ color: 'var(--color-text-primary)' }}>{crumb.label}</span>
-            )}
-          </li>
-        ))}
-      </ol>
-
-      {/* Method Dropdown - only show on method pages */}
-      {currentMethod && (
-        <div ref={dropdownRef} style={{ position: 'relative', marginLeft: 'var(--spacing-sm)' }}>
-          <button
-            onClick={() => setDropdownOpen(!dropdownOpen)}
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              gap: 'var(--spacing-xs)',
-              padding: 'var(--spacing-xs) var(--spacing-sm)',
-              backgroundColor: 'var(--color-background-secondary)',
-              border: '1px solid var(--color-border)',
-              borderRadius: 'var(--radius-sm)',
-              color: 'var(--color-text-primary)',
-              fontSize: 'var(--font-sm)',
-              cursor: 'pointer',
-              transition: 'all 0.2s ease',
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.backgroundColor = 'var(--color-background-tertiary)';
-              e.currentTarget.style.borderColor = 'var(--color-primary)';
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.backgroundColor = 'var(--color-background-secondary)';
-              e.currentTarget.style.borderColor = 'var(--color-border)';
-            }}
-          >
-            <Icon name="chevron-down" size={14} />
-            <span>Switch Method</span>
-          </button>
-
-          {dropdownOpen && (
-            <div style={{
-              position: 'absolute',
-              top: 'calc(100% + var(--spacing-xs))',
-              left: 0,
-              minWidth: '250px',
-              backgroundColor: 'var(--color-background)',
-              border: '1px solid var(--color-border)',
-              borderRadius: 'var(--radius-md)',
-              boxShadow: 'var(--shadow-lg)',
-              zIndex: 1000,
-              maxHeight: '400px',
-              overflowY: 'auto',
+        <ol style={{ 
+          display: 'flex', 
+          alignItems: 'center',
+          listStyle: 'none',
+          padding: 0,
+          margin: 0,
+          gap: 'var(--spacing-xs)',
+          flexWrap: 'wrap',
+          flex: 1
+        }}>
+          {breadcrumbs.map((crumb, index) => (
+            <li key={index} style={{ 
+              display: 'flex', 
+              alignItems: 'center', 
+              gap: 'var(--spacing-xs)' 
             }}>
-              {dynamicMethods.map((method) => {
-                const isActive = method.slug === slug;
-                let cleanTitle = method.title;
-                if (cleanTitle.includes(' - ')) {
-                  cleanTitle = cleanTitle.split(' - ')[0];
-                }
-                
-                return (
-                  <button
-                    key={method.slug}
-                    onClick={() => {
-                      navigate(`/methods/${method.slug}`);
-                      setDropdownOpen(false);
-                    }}
-                    style={{
-                      display: 'block',
-                      width: '100%',
-                      padding: 'var(--spacing-sm) var(--spacing-md)',
-                      backgroundColor: isActive ? 'var(--color-primary)' : 'transparent',
-                      color: isActive ? '#FFFFFF' : 'var(--color-text-primary)',
-                      border: 'none',
-                      textAlign: 'left',
-                      fontSize: 'var(--font-sm)',
-                      cursor: 'pointer',
-                      transition: 'background-color 0.2s ease',
-                    }}
-                    onMouseEnter={(e) => {
-                      if (!isActive) {
-                        e.currentTarget.style.backgroundColor = 'var(--color-background-secondary)';
-                      }
-                    }}
-                    onMouseLeave={(e) => {
-                      if (!isActive) {
-                        e.currentTarget.style.backgroundColor = 'transparent';
-                      }
-                    }}
-                  >
-                    {cleanTitle}
-                  </button>
-                );
-              })}
-            </div>
-          )}
-        </div>
-      )}
-    </nav>
+              {index > 0 && (
+                <Icon 
+                  name="chevron-right" 
+                  size={14} 
+                  color="var(--color-text-tertiary)" 
+                  style={{ flexShrink: 0 }}
+                />
+              )}
+              {crumb.path ? (
+                <Link 
+                  to={crumb.path} 
+                  style={{ 
+                    color: 'var(--color-primary)', 
+                    textDecoration: 'none',
+                    transition: 'opacity 0.2s',
+                    whiteSpace: 'nowrap'
+                  }}
+                  onMouseEnter={(e) => e.currentTarget.style.opacity = '0.8'}
+                  onMouseLeave={(e) => e.currentTarget.style.opacity = '1'}
+                >
+                  {crumb.label}
+                </Link>
+              ) : (
+                <span style={{ 
+                  color: 'var(--color-text-primary)',
+                  whiteSpace: 'nowrap'
+                }}>
+                  {crumb.label}
+                </span>
+              )}
+            </li>
+          ))}
+        </ol>
+
+        {/* Method Dropdown - only show on method pages */}
+        {currentMethod && (
+          <div ref={dropdownRef} style={{ 
+            position: 'relative',
+            flexShrink: 0
+          }}>
+            <button
+              onClick={() => setDropdownOpen(!dropdownOpen)}
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: 'var(--spacing-xs)',
+                padding: 'var(--spacing-xs) var(--spacing-sm)',
+                backgroundColor: 'var(--color-background-secondary)',
+                border: '1px solid var(--color-border)',
+                borderRadius: 'var(--radius-sm)',
+                color: 'var(--color-text-primary)',
+                fontSize: 'var(--font-sm)',
+                cursor: 'pointer',
+                transition: 'all 0.2s ease',
+                whiteSpace: 'nowrap'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.backgroundColor = 'var(--color-background-tertiary)';
+                e.currentTarget.style.borderColor = 'var(--color-primary)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.backgroundColor = 'var(--color-background-secondary)';
+                e.currentTarget.style.borderColor = 'var(--color-border)';
+              }}
+            >
+              <span>Switch Method</span>
+              <Icon name="chevron-down" size={14} />
+            </button>
+
+            {dropdownOpen && (
+              <div style={{
+                position: 'absolute',
+                top: 'calc(100% + var(--spacing-xs))',
+                right: 0,
+                minWidth: '250px',
+                maxWidth: window.innerWidth < 768 ? 'calc(100vw - 2rem)' : 'none',
+                backgroundColor: 'var(--color-background)',
+                border: '1px solid var(--color-border)',
+                borderRadius: 'var(--radius-md)',
+                boxShadow: 'var(--shadow-lg)',
+                zIndex: 1000,
+                maxHeight: '400px',
+                overflowY: 'auto',
+              }}>
+                {dynamicMethods.map((method) => {
+                  const isActive = method.slug === slug;
+                  let cleanTitle = method.title;
+                  if (cleanTitle.includes(' - ')) {
+                    cleanTitle = cleanTitle.split(' - ')[0];
+                  }
+                  
+                  return (
+                    <button
+                      key={method.slug}
+                      onClick={() => {
+                        navigate(`/methods/${method.slug}`);
+                        setDropdownOpen(false);
+                      }}
+                      style={{
+                        display: 'block',
+                        width: '100%',
+                        padding: 'var(--spacing-sm) var(--spacing-md)',
+                        backgroundColor: isActive ? 'var(--color-primary)' : 'transparent',
+                        color: isActive ? '#FFFFFF' : 'var(--color-text-primary)',
+                        border: 'none',
+                        textAlign: 'left',
+                        fontSize: 'var(--font-sm)',
+                        cursor: 'pointer',
+                        transition: 'background-color 0.2s ease',
+                      }}
+                      onMouseEnter={(e) => {
+                        if (!isActive) {
+                          e.currentTarget.style.backgroundColor = 'var(--color-background-secondary)';
+                        }
+                      }}
+                      onMouseLeave={(e) => {
+                        if (!isActive) {
+                          e.currentTarget.style.backgroundColor = 'transparent';
+                        }
+                      }}
+                    >
+                      {cleanTitle}
+                    </button>
+                  );
+                })}
+              </div>
+            )}
+          </div>
+        )}
+      </nav>
+    </div>
   );
 } 

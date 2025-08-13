@@ -61,6 +61,20 @@ export const iconMapping: Record<string, string> = {
   'fa-chevron-right': 'chevron-right',
   'fa-chevron-up': 'chevron-up',
   'fa-chevron-down': 'chevron-down',
+  'fa-presentation': 'document',
+  'fa-mobile-alt': 'device-mobile',
+  'fa-comment': 'chat',
+  'fa-layer-group': 'grid',
+  'fa-sticky-note': 'document',
+  'fa-table': 'grid',
+  'fa-wpforms': 'document',
+  'fa-chart-line': 'trending-up',
+  'fa-sitemap': 'share',
+  'fa-puzzle-piece': 'apps',
+  'fa-mouse-pointer': 'click',
+  'fa-vial': 'settings',
+  'fa-paint-brush': 'wand',
+  'fa-list-check': 'check-circle',
 };
 
 export function mapIconName(iconName: string): string {

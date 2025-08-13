@@ -50,72 +50,18 @@ export default function HomePage() {
       >
         <Card 
           variant="outlined"
-          style={{
-            height: '100%',
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            justifyContent: 'center',
-            gap: 'var(--spacing-md)',
-            padding: 'var(--spacing-xl)',
-            textAlign: 'center',
-            transition: 'all 0.2s ease',
-            cursor: 'pointer',
-            border: '1px solid var(--color-border)',
-            backgroundColor: 'var(--color-background)'
-          }}
-          onMouseEnter={(e) => {
-            setHoveredMethod(m.slug);
-            e.currentTarget.style.backgroundColor = 'var(--color-background-secondary)';
-            e.currentTarget.style.borderColor = 'var(--color-primary)';
-            // Update icon container background
-            const iconContainer = e.currentTarget.querySelector('[data-icon-container]') as HTMLElement;
-            if (iconContainer) {
-              iconContainer.style.backgroundColor = 'var(--color-primary)';
-              iconContainer.style.borderColor = 'var(--color-primary)';
-            }
-          }}
-          onMouseLeave={(e) => {
-            setHoveredMethod(null);
-            e.currentTarget.style.backgroundColor = 'var(--color-background)';
-            e.currentTarget.style.borderColor = 'var(--color-border)';
-            // Reset icon container background
-            const iconContainer = e.currentTarget.querySelector('[data-icon-container]') as HTMLElement;
-            if (iconContainer) {
-              iconContainer.style.backgroundColor = 'var(--color-background-secondary)';
-              iconContainer.style.borderColor = 'var(--color-border)';
-            }
-          }}
+          className="method-card"
+          onMouseEnter={() => setHoveredMethod(m.slug)}
+          onMouseLeave={() => setHoveredMethod(null)}
         >
-          <div 
-            data-icon-container
-            style={{
-              width: 56,
-              height: 56,
-              borderRadius: 'var(--radius-lg)',
-              backgroundColor: 'var(--color-background-secondary)',
-              border: '1px solid var(--color-border)',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              transition: 'all 0.2s ease'
-            }}
-          >
+          <div data-icon-container>
             <Icon 
               name={iconMap[m.icon] || 'document'} 
               size={28} 
               color={hoveredMethod === m.slug ? '#FFFFFF' : 'var(--color-primary)'} 
             />
           </div>
-          <h3 style={{ 
-            color: 'var(--color-text-primary)',
-            fontSize: 'var(--font-sm)',
-            fontWeight: 'var(--font-weight-medium)',
-            margin: 0,
-            lineHeight: '1.4'
-          }}>
-            {m.title}
-          </h3>
+          <h3>{m.title}</h3>
         </Card>
       </Link>
     )), [hoveredMethod, dynamicMethods]);
@@ -123,68 +69,35 @@ export default function HomePage() {
   return (
     <div>
       {/* Hero Section */}
-      <section style={{ 
-        textAlign: 'center', 
-        padding: 'var(--spacing-3xl) var(--spacing-xl) var(--spacing-xl)',
-        backgroundColor: 'var(--color-background)'
-      }}>
-        <h1 style={{ 
-          fontSize: 'var(--font-4xl)',
-          marginBottom: 'var(--spacing-md)',
-          color: 'var(--color-text-primary)'
-        }}>
+      <section className="hero-section">
+        <h1 className="hero-title">
           UBank Research Playbook
         </h1>
-        <p style={{ 
-          fontSize: 'var(--font-lg)',
-          color: 'var(--color-text-secondary)',
-          maxWidth: '600px',
-          margin: '0 auto'
-        }}>
+        <p className="hero-description">
           Your comprehensive guide to conducting effective user research. 
           Choose a method below or use our decision tree to find the right approach.
         </p>
       </section>
 
       {/* Research Methods Grid */}
-      <section style={{ padding: 'var(--spacing-3xl) var(--spacing-xl)' }}>
-        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
-          <h2 style={{ 
-            textAlign: 'center',
-            marginBottom: 'var(--spacing-lg)',
-            fontSize: 'var(--font-2xl)',
-            fontWeight: 'var(--font-weight-semibold)'
-          }}>
-            Research Methods
-          </h2>
-          <p style={{ 
-            textAlign: 'center',
-            color: 'var(--color-text-secondary)',
-            marginBottom: 'var(--spacing-2xl)',
-            fontSize: 'var(--font-base)',
-            maxWidth: '600px',
-            margin: '0 auto var(--spacing-2xl)'
-          }}>
-            Select a research method to learn more about when and how to use it
-          </p>
-          <div style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))',
-            gap: 'var(--spacing-md)',
-            maxWidth: '1000px',
-            margin: '0 auto'
-          }}>
-            {methodCards}
-          </div>
+      <section className="methods-section">
+        <h2>Research Methods</h2>
+        <p>Select a research method to learn more about when and how to use it</p>
+        <div className="method-grid">
+          {methodCards}
         </div>
       </section>
 
       {/* Decision Tree Section */}
       <section style={{ 
         backgroundColor: 'var(--color-background-secondary)',
-        padding: 'var(--spacing-3xl) var(--spacing-xl)'
+        padding: 'var(--spacing-2xl) 0'
       }}>
-        <div style={{ maxWidth: '900px', margin: '0 auto' }}>
+        <div style={{ 
+          maxWidth: '1200px', 
+          margin: '0 auto',
+          padding: '0 var(--spacing-lg)'
+        }}>
           <h2 style={{ 
             textAlign: 'center',
             marginBottom: 'var(--spacing-lg)',
@@ -196,7 +109,9 @@ export default function HomePage() {
             textAlign: 'center',
             color: 'var(--color-text-secondary)',
             marginBottom: 'var(--spacing-xl)',
-            fontSize: 'var(--font-lg)'
+            fontSize: 'var(--font-lg)',
+            maxWidth: '600px',
+            margin: '0 auto var(--spacing-xl)'
           }}>
             Answer a few questions and we'll recommend the best research method for your needs.
           </p>
@@ -206,10 +121,14 @@ export default function HomePage() {
 
       {/* Help Section */}
       <section style={{ 
-        padding: 'var(--spacing-3xl) var(--spacing-xl)',
+        padding: 'var(--spacing-2xl) 0',
         backgroundColor: 'var(--color-background)'
       }}>
-        <div style={{ maxWidth: '900px', margin: '0 auto' }}>
+        <div style={{ 
+          maxWidth: '1200px', 
+          margin: '0 auto',
+          padding: '0 var(--spacing-lg)'
+        }}>
           <h2 style={{ 
             textAlign: 'center',
             marginBottom: 'var(--spacing-xl)',
@@ -221,7 +140,9 @@ export default function HomePage() {
           <div style={{
             display: 'grid',
             gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
-            gap: 'var(--spacing-lg)'
+            gap: 'var(--spacing-md)',
+            maxWidth: '900px',
+            margin: '0 auto'
           }}>
             <Card style={{ textAlign: 'center', padding: 'var(--spacing-xl)' }}>
               <Icon name="users" size={48} color="var(--color-primary)" />

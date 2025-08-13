@@ -9,13 +9,13 @@ export default function ResourcesPage() {
   return (
     <div>
       <div style={{ textAlign: 'center', marginBottom: 'var(--spacing-3xl)' }}>
-        <h1 style={{ 
+        <h1 className="hero-title" style={{ 
           fontSize: 'var(--font-4xl)',
           marginBottom: 'var(--spacing-md)'
         }}>
           Resources & Templates
         </h1>
-        <p style={{ 
+        <p className="hero-description" style={{ 
           color: 'var(--color-text-secondary)',
           fontSize: 'var(--font-lg)',
           maxWidth: '600px',
@@ -35,13 +35,13 @@ export default function ResourcesPage() {
           <Icon name="document" size={24} />
           Research Templates
         </h2>
-        <div style={{
+        <div className="resource-grid" style={{
           display: 'grid',
           gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))',
           gap: 'var(--spacing-lg)'
         }}>
           {templates.map((resource) => (
-            <Card key={resource.slug}>
+            <Card key={resource.slug} className="resource-card">
               <div style={{ 
                 display: 'flex', 
                 alignItems: 'center', 
@@ -77,13 +77,13 @@ export default function ResourcesPage() {
           <Icon name="check-circle" size={24} />
           Quality Assurance
         </h2>
-        <div style={{
+        <div className="resource-grid" style={{
           display: 'grid',
           gridTemplateColumns: 'repeat(auto-fit, minmax(400px, 1fr))',
           gap: 'var(--spacing-lg)'
         }}>
           {guides.map((resource) => (
-            <Card key={resource.slug} variant="elevated">
+            <Card key={resource.slug} variant="elevated" className="resource-card">
               <div style={{ 
                 display: 'flex', 
                 alignItems: 'center', 

@@ -1,16 +1,34 @@
-/* Design System Core Styles */
+/* Design System Base Styles */
+@import './responsive.css';
 
-/* Import fallback fonts for brand fonts */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
-/* ============================= */
-/* CSS Reset and Base Styles     */
-/* ============================= */
-
-*,
-*::before,
-*::after {
+/* Reset and normalize styles */
+*, *::before, *::after {
   box-sizing: border-box;
+}
+
+/* Hide all scrollbars but maintain functionality */
+/* Webkit browsers */
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  display: none;
+}
+
+/* Firefox */
+html {
+  scrollbar-width: none;
+  -moz-scrollbar-width: none;
+}
+
+/* All elements */
+* {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+/* Ensure containers can still scroll */
+div, section, main, aside, nav {
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
 }
 
 * {

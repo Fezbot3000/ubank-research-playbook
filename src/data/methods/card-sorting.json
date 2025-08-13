@@ -14,13 +14,18 @@
     {
       "name": "Miro/Figjam",
       "description": "Physical Card Sorting",
-      "icon": "fa-sticky-note",
-      "logo": "/assets/logos/figma.svg"
+      "icon": "fa-sticky-note"
     },
     {
       "name": "Spreadsheet",
       "description": "Data Analysis",
       "icon": "fa-table"
+    },
+    {
+      "name": "Figma Slides",
+      "description": "Insights Deck (Max 3 per piece of research)",
+      "icon": "fa-presentation",
+      "link": "https://www.figma.com/slides/RodMmoG77vJztZsM6Z3Ean/2025-Research-Playback?node-id=484-8400&t=2tZP1VJliVSeW8i6-1"
     }
   ],
   "steps": [

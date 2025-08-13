@@ -291,17 +291,58 @@ export default function MethodPage() {
       {/* Breadcrumbs Navigation */}
       <Breadcrumbs />
       
-      {/* Header Section */}
-      <Card style={{ marginBottom: 'var(--spacing-lg)', position: 'relative' }}>
-        {/* Edit/Save buttons positioned in top right */}
-        <div style={{
-          position: 'absolute',
-          top: 'var(--spacing-md)',
-          right: 'var(--spacing-md)',
-          display: 'flex',
-          gap: 'var(--spacing-sm)'
-        }}>
-          {!isEditMode ? (
+      {/* Edit/Save buttons positioned above the card */}
+      <div style={{
+        display: 'flex',
+        justifyContent: 'flex-end',
+        alignItems: 'center',
+        gap: 'var(--spacing-sm)',
+        marginBottom: 'var(--spacing-md)',
+        flexWrap: 'wrap'
+      }}>
+        {hasUnsavedChanges && (
+          <span style={{
+            fontSize: 'var(--font-sm)',
+            color: 'var(--color-warning)',
+            display: 'flex',
+            alignItems: 'center',
+            gap: 'var(--spacing-xs)',
+            marginRight: 'auto'
+          }}>
+            <Icon name="alert-circle" size={16} />
+            Unsaved changes
+          </span>
+        )}
+        {!isEditMode ? (
+          <Button
+            variant="ghost"
+            size="sm"
+            onClick={() => toggleEditMode()}
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              gap: 'var(--spacing-xs)'
+            }}
+          >
+            <Icon name="edit" size={16} />
+            Edit
+          </Button>
+        ) : (
+          <>
+            <Button
+              variant="primary"
+              size="sm"
+              onClick={saveChanges}
+              isDisabled={!hasUnsavedChanges}
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: 'var(--spacing-xs)'
+              }}
+            >
+              <Icon name="save" size={16} />
+              Save
+            </Button>
             <Button
               variant="ghost"
               size="sm"
@@ -312,59 +353,21 @@ export default function MethodPage() {
                 gap: 'var(--spacing-xs)'
               }}
             >
-              <Icon name="edit" size={16} />
-              Edit
+              Cancel
             </Button>
-          ) : (
-                        <>
-              <Button
-                variant="primary"
-                size="sm"
-                onClick={saveChanges}
-                isDisabled={!hasUnsavedChanges}
-                style={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: 'var(--spacing-xs)'
-                }}
-              >
-                <Icon name="save" size={16} />
-                Save
-              </Button>
-              <Button
-                variant="ghost"
-                size="sm"
-                onClick={() => toggleEditMode()}
-                style={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: 'var(--spacing-xs)'
-                }}
-              >
-                Cancel
-              </Button>
-            </>
-        )}
-        {hasUnsavedChanges && (
-          <span style={{
-            fontSize: 'var(--font-sm)',
-            color: 'var(--color-warning)',
-            display: 'flex',
-            alignItems: 'center',
-            gap: 'var(--spacing-xs)',
-            marginLeft: 'var(--spacing-sm)'
-          }}>
-            <Icon name="alert-circle" size={16} />
-            Unsaved
-          </span>
+          </>
         )}
       </div>
-
+      
+      {/* Header Section */}
+      <Card style={{ marginBottom: 'var(--spacing-lg)' }}>
         <EditableText
           tag="h1"
           value={data.title}
           onChange={(value) => updateData('title', value)}
-          style={{ marginBottom: 'var(--spacing-md)', paddingRight: 'var(--spacing-3xl)' }}
+          style={{ 
+            marginBottom: 'var(--spacing-md)'
+          }}
         />
         <EditableText
           tag="p"
@@ -587,9 +590,21 @@ export default function MethodPage() {
 
       {/* Steps Section */}
       <Card style={{ marginBottom: 'var(--spacing-lg)' }}>
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 'var(--spacing-lg)' }}>
-          <h2 style={{ margin: 0 }}>Step-by-Step Process</h2>
-          <div style={{ display: 'flex', gap: 'var(--spacing-sm)' }}>
+        <div style={{ 
+          display: 'flex', 
+          justifyContent: 'space-between', 
+          alignItems: 'center', 
+          marginBottom: 'var(--spacing-lg)',
+          flexWrap: 'wrap',
+          gap: 'var(--spacing-sm)'
+        }}>
+          <h2 style={{ margin: 0, flex: '1 1 auto' }}>Step-by-Step Process</h2>
+          <div style={{ 
+            display: 'flex', 
+            gap: 'var(--spacing-sm)',
+            flexWrap: 'wrap',
+            justifyContent: 'flex-end'
+          }}>
             {Object.keys(checkedSteps).some(key => key.startsWith(`${data.slug}-`) && checkedSteps[key]) && (
               <Button
                 variant="ghost"
@@ -608,7 +623,8 @@ export default function MethodPage() {
                   display: 'flex',
                   alignItems: 'center',
                   gap: 'var(--spacing-xs)',
-                  color: 'var(--color-text-secondary)'
+                  color: 'var(--color-text-secondary)',
+                  whiteSpace: 'nowrap'
                 }}
               >
                 <Icon name="refresh" size={16} />
@@ -631,7 +647,8 @@ export default function MethodPage() {
                 style={{
                   display: 'flex',
                   alignItems: 'center',
-                  gap: 'var(--spacing-xs)'
+                  gap: 'var(--spacing-xs)',
+                  whiteSpace: 'nowrap'
                 }}
               >
                 <Icon name="plus" size={16} />
@@ -649,7 +666,7 @@ export default function MethodPage() {
               <div key={index} style={{ 
                 display: 'flex', 
                 gap: 'var(--spacing-md)',
-                paddingLeft: 'var(--spacing-md)',
+                paddingLeft: window.innerWidth < 768 ? '0' : 'var(--spacing-md)',
                 position: 'relative'
               }}>
                 {isEditMode && (
@@ -679,45 +696,48 @@ export default function MethodPage() {
                     <Icon name="minus-circle" size={16} />
                   </Button>
                 )}
-                <div style={{
-                  width: '32px',
-                  height: '32px',
-                  borderRadius: '50%',
-                  backgroundColor: 'var(--color-primary)',
-                  color: 'var(--color-text-on-primary)',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  fontWeight: 'var(--font-weight-bold)',
-                  flexShrink: 0
-                }}>
-                  {index + 1}
-                </div>
                 <div style={{ flex: 1 }}>
                   <div style={{ 
                     display: 'flex', 
-                    alignItems: 'center', 
+                    alignItems: 'flex-start', 
                     gap: 'var(--spacing-sm)',
                     marginBottom: 'var(--spacing-sm)'
                   }}>
-                    <input
-                      type="checkbox"
-                      checked={checkedSteps[`${data.slug}-${index}`] || false}
-                      onChange={(e) => {
-                        const newCheckedSteps = {
-                          ...checkedSteps,
-                          [`${data.slug}-${index}`]: e.target.checked
-                        };
-                        setCheckedSteps(newCheckedSteps);
-                        localStorage.setItem('methodStepProgress', JSON.stringify(newCheckedSteps));
-                      }}
-                      style={{
-                        width: '20px',
-                        height: '20px',
-                        cursor: 'pointer',
-                        accentColor: 'var(--color-primary)'
-                      }}
-                    />
+                    <div style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: 'var(--spacing-sm)',
+                      flexShrink: 0
+                    }}>
+                      <div style={{
+                        width: '24px',
+                        height: '24px',
+                        borderRadius: '50%',
+                        backgroundColor: 'var(--color-primary)',
+                        color: 'var(--color-text-on-primary)',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        fontSize: 'var(--font-xs)',
+                        fontWeight: 'var(--font-weight-bold)',
+                        flexShrink: 0
+                      }}>
+                        {index + 1}
+                      </div>
+                      <input
+                        type="checkbox"
+                        className="step-checkbox"
+                        checked={checkedSteps[`${data.slug}-${index}`] || false}
+                        onChange={(e) => {
+                          const newCheckedSteps = {
+                            ...checkedSteps,
+                            [`${data.slug}-${index}`]: e.target.checked
+                          };
+                          setCheckedSteps(newCheckedSteps);
+                          localStorage.setItem('methodStepProgress', JSON.stringify(newCheckedSteps));
+                        }}
+                      />
+                    </div>
                     <EditableText
                       tag="h3"
                       value={stepData.title}
@@ -734,8 +754,10 @@ export default function MethodPage() {
                       }}
                       style={{ 
                         margin: 0,
+                        flex: 1,
                         textDecoration: checkedSteps[`${data.slug}-${index}`] ? 'line-through' : 'none',
-                        opacity: checkedSteps[`${data.slug}-${index}`] ? 0.6 : 1
+                        opacity: checkedSteps[`${data.slug}-${index}`] ? 0.6 : 1,
+                        fontSize: window.innerWidth < 768 ? 'var(--font-lg)' : 'var(--font-xl)'
                       }}
                     />
                   </div>

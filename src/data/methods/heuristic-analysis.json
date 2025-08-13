@@ -7,23 +7,25 @@
   "purpose": "Quickly identify usability issues by evaluating your designs against established best practices - like having an experienced designer review your work.",
   "tools": [
     {
-      "name": "Figjam",
-      "description": "Documenting issues",
-      "icon": "fa-sticky-note",
-      "logo": "/assets/logos/figma.svg",
-      "link": "https://www.figma.com/board/heuristicanalysistemplate"
+      "name": "Figma",
+      "description": "Design Review",
+      "icon": "fa-paint-brush",
+      "link": "https://figma.com"
     },
     {
-      "name": "Nielsen's 10 Heuristics",
-      "description": "Evaluation checklist",
-      "icon": "fa-list-check",
-      "link": "https://www.nngroup.com/articles/ten-usability-heuristics/"
+      "name": "Heuristic Checklist",
+      "description": "Evaluation Framework",
+      "icon": "fa-list-check"
+    },
+    {
+      "name": "Screenshot Tool",
+      "description": "Issue Documentation",
+      "icon": "fa-camera"
     },
     {
       "name": "Figma Slides",
       "description": "Insights Deck (Max 3 per piece of research)",
       "icon": "fa-presentation",
-      "logo": "/assets/logos/figma.svg",
       "link": "https://www.figma.com/slides/RodMmoG77vJztZsM6Z3Ean/2025-Research-Playback?node-id=484-8400&t=2tZP1VJliVSeW8i6-1"
     }
   ],
