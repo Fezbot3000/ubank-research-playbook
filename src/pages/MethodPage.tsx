@@ -8,6 +8,7 @@ import ConfirmationDialog from '../components/ConfirmationDialog';
 import Breadcrumbs from '../components/Breadcrumbs';
 import { clearMethodCache } from '../data/methods';
 import { SampleSizeCalculator } from '../components/SampleSizeCalculator';
+import { getAssetPath } from '../utils/paths';
 
 interface DiagramNode {
   id: string;
@@ -853,14 +854,14 @@ export default function MethodPage() {
                             </Button>
                           )}
                           <img 
-                            src={`/User-Testing/${screenshotFile}`}
+                            src={getAssetPath(`User-Testing/${screenshotFile}`)}
                             alt={`Step ${index + 1} screenshot ${screenshotIndex + 1}`}
-                            onClick={() => setLightboxImage(`/User-Testing/${screenshotFile}`)}
+                            onClick={() => setLightboxImage(getAssetPath(`User-Testing/${screenshotFile}`))}
                             onError={(e) => {
                               // If the image fails to load, try with a different path
                               const img = e.target as HTMLImageElement;
                               if (!img.src.includes('public/')) {
-                                img.src = `/public/User-Testing/${screenshotFile}`;
+                                img.src = getAssetPath(`public/User-Testing/${screenshotFile}`);
                               }
                             }}
                             style={{
@@ -1024,9 +1025,9 @@ export default function MethodPage() {
                 }}
               >
                 <img 
-                  src={`/User-Testing/${screenshot.filename}`}
+                  src={getAssetPath(`User-Testing/${screenshot.filename}`)}
                   alt={screenshot.caption}
-                  onClick={() => setLightboxImage(`/User-Testing/${screenshot.filename}`)}
+                  onClick={() => setLightboxImage(getAssetPath(`User-Testing/${screenshot.filename}`))}
                   style={{
                     width: '100%',
                     height: 'auto',

@@ -230,7 +230,8 @@ export const Icon: React.FC<IconProps> = ({
         setHasError(false);
         
         // Import the SVG file dynamically
-        const response = await fetch(`/Icons/${name}.svg`);
+        const basePath = import.meta.env.BASE_URL || '/';
+        const response = await fetch(`${basePath}Icons/${name}.svg`);
         if (!response.ok) {
           throw new Error(`Failed to load icon: ${name}`);
         }
