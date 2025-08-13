@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import MethodPage from './pages/MethodPage';
 import ResourcesPage from './pages/ResourcesPage';
@@ -31,6 +31,7 @@ export default function App() {
               <DecisionTreeAnalysisPage />
             </ErrorBoundary>
           } />
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </Layout>
     </ErrorBoundary>
