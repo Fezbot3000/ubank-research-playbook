@@ -1,4 +1,5 @@
 import React from 'react';
+import { mapIconName } from '../../../utils/iconMapping';
 
 export interface IconProps extends React.SVGProps<SVGSVGElement> {
   /** The name/identifier of the icon to display */
@@ -220,6 +221,9 @@ export const Icon: React.FC<IconProps> = ({
   const [svgContent, setSvgContent] = React.useState<string>('');
   const [isLoading, setIsLoading] = React.useState(true);
   const [hasError, setHasError] = React.useState(false);
+  
+  // Map icon name if it has fa- prefix
+  const mappedName = mapIconName(name);
 
   React.useEffect(() => {
     let isMounted = true;
@@ -231,9 +235,9 @@ export const Icon: React.FC<IconProps> = ({
         
         // Import the SVG file dynamically
         const basePath = import.meta.env.BASE_URL || '/';
-        const response = await fetch(`${basePath}Icons/${name}.svg`);
+        const response = await fetch(`${basePath}Icons/${mappedName}.svg`);
         if (!response.ok) {
-          throw new Error(`Failed to load icon: ${name}`);
+          throw new Error(`Failed to load icon: ${mappedName}`);
         }
         
         const svgText = await response.text();
@@ -256,7 +260,7 @@ export const Icon: React.FC<IconProps> = ({
     return () => {
       isMounted = false;
     };
-  }, [name]);
+  }, [mappedName]);
 
   if (isLoading) {
     // Show a placeholder while loading
