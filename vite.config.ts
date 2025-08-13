@@ -37,6 +37,7 @@ const upload = multer({
 });
 
 export default defineConfig({
+  base: '/ubank-research-playbook/',
   plugins: [
     react(),
     {

@@ -1,10 +1,10 @@
 {
   "slug": "usability-testing",
   "title": "Unmoderated Usability Testing",
-  "duration": "1 days",
+  "duration": "2 days",
   "participants": "25 Participants",
   "complexity": "low",
-  "purpose": "Just like moderated usability testing gives you the ability to test your prototypes with 6 people to seek feedback, unmoderated usability testing gives you the ability to test with a large sample size and still maintain the rich insights that you get in modeerated usability testing. ",
+  "purpose": "Just like moderated usability testing, unmoderated testing gives you the ability to test your prototypes with 25 people to seek feedback and still maintain the rich insights that you get in a moderated usability testing session. \n\nIt's important to know that it takes a bit more time to set these up, but the insights you gain from this type of testing are invaluable. \n - Heatmaps that show you real statistical behaviour of a user, where they went, and then also how they felt. \n - It merges the qualitative insights of a moderated session and combines them with a large sample size. ",
   "tools": [
     {
       "name": "Askable",
