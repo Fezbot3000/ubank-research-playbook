@@ -6,16 +6,25 @@ interface EditModeContextType {
   toggleEditMode: (skipConfirmation?: boolean) => void;
   hasUnsavedChanges: boolean;
   setHasUnsavedChanges: (value: boolean) => void;
+  isDevelopment: boolean;
 }
 
 const EditModeContext = createContext<EditModeContextType | undefined>(undefined);
 
 export const EditModeProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
+  // Check if we're in development mode
+  const isDevelopment = import.meta.env.DEV;
+  
   const [isEditMode, setIsEditMode] = useState(false);
   const [hasUnsavedChanges, setHasUnsavedChanges] = useState(false);
   const [showConfirmDialog, setShowConfirmDialog] = useState(false);
 
   const toggleEditMode = (skipConfirmation: boolean = false) => {
+    // Only allow edit mode in development
+    if (!isDevelopment) {
+      return;
+    }
+    
     if (!skipConfirmation && isEditMode && hasUnsavedChanges) {
       setShowConfirmDialog(true);
     } else {
@@ -38,7 +47,8 @@ export const EditModeProvider: React.FC<{ children: ReactNode }> = ({ children }
       isEditMode, 
       toggleEditMode, 
       hasUnsavedChanges, 
-      setHasUnsavedChanges 
+      setHasUnsavedChanges,
+      isDevelopment 
     }}>
       {children}
       <ConfirmationDialog

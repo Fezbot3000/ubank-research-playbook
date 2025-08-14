@@ -19,10 +19,11 @@ interface ResourceData {
 export default function ResourcePage() {
   const { slug } = useParams<{ slug: string }>();
   const navigate = useNavigate();
-  const { isEditMode, hasUnsavedChanges, setHasUnsavedChanges, toggleEditMode } = useEditMode();
+  const [resource, setResource] = useState<any>(null);
+  const [loading, setLoading] = useState(true);
+  const { isEditMode, toggleEditMode, hasUnsavedChanges, setHasUnsavedChanges, isDevelopment } = useEditMode();
   const [data, setData] = useState<ResourceData | null>(null);
   const [originalData, setOriginalData] = useState<ResourceData | null>(null);
-  const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
   // Load resource data
@@ -181,7 +182,7 @@ export default function ResourcePage() {
           alignItems: 'center',
           gap: 'var(--spacing-sm)'
         }}>
-          {!isEditMode ? (
+          {isDevelopment && !isEditMode ? (
             <Button
               variant="ghost"
               size="sm"
@@ -195,7 +196,7 @@ export default function ResourcePage() {
               <Icon name="edit" size={16} />
               Edit
             </Button>
-          ) : (
+          ) : isDevelopment && isEditMode ? (
             <>
               <Button
                 variant="primary"
@@ -224,7 +225,7 @@ export default function ResourcePage() {
                 Cancel
               </Button>
             </>
-          )}
+          ) : null}
           {hasUnsavedChanges && (
             <span style={{
               fontSize: 'var(--font-sm)',

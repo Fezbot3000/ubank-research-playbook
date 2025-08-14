@@ -56,7 +56,7 @@ export default function MethodPage() {
   const [originalData, setOriginalData] = useState<MethodData | null>(null);
   const [loading, setLoading] = useState(true);
   const [lightboxImage, setLightboxImage] = useState<string | null>(null);
-  const { isEditMode, toggleEditMode, hasUnsavedChanges, setHasUnsavedChanges } = useEditMode();
+  const { isEditMode, toggleEditMode, hasUnsavedChanges, setHasUnsavedChanges, isDevelopment } = useEditMode();
   const [dragOver, setDragOver] = useState<number | null>(null);
   const [checkedSteps, setCheckedSteps] = useState<Record<string, boolean>>({});
   
@@ -292,29 +292,31 @@ export default function MethodPage() {
       {/* Breadcrumbs Navigation */}
       <Breadcrumbs />
       
-      {/* Edit/Save buttons positioned above the card */}
+      {/* Edit Mode Controls */}
       <div style={{
+        position: 'fixed',
+        top: 'calc(var(--header-height) + var(--spacing-md))',
+        right: 'var(--spacing-md)',
+        zIndex: 1000,
         display: 'flex',
-        justifyContent: 'flex-end',
         alignItems: 'center',
         gap: 'var(--spacing-sm)',
-        marginBottom: 'var(--spacing-md)',
-        flexWrap: 'wrap'
+        padding: 'var(--spacing-sm) var(--spacing-md)',
+        borderRadius: 'var(--radius-md)',
+        backgroundColor: 'var(--color-background)',
+        boxShadow: 'var(--shadow-md)'
       }}>
         {hasUnsavedChanges && (
           <span style={{
-            fontSize: 'var(--font-sm)',
+            fontSize: 'var(--font-size-sm)',
             color: 'var(--color-warning)',
-            display: 'flex',
-            alignItems: 'center',
-            gap: 'var(--spacing-xs)',
-            marginRight: 'auto'
+            fontWeight: 500
           }}>
-            <Icon name="alert-circle" size={16} />
+            <Icon name="alert-circle" size={14} />
             Unsaved changes
           </span>
         )}
-        {!isEditMode ? (
+        {isDevelopment && !isEditMode ? (
           <Button
             variant="ghost"
             size="sm"
@@ -328,7 +330,7 @@ export default function MethodPage() {
             <Icon name="edit" size={16} />
             Edit
           </Button>
-        ) : (
+        ) : isDevelopment && isEditMode ? (
           <>
             <Button
               variant="primary"
@@ -357,7 +359,7 @@ export default function MethodPage() {
               Cancel
             </Button>
           </>
-        )}
+        ) : null}
       </div>
       
       {/* Header Section */}

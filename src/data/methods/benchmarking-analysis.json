@@ -4,28 +4,20 @@
   "duration": "1-2 weeks",
   "participants": "Research team",
   "complexity": "Medium",
-  "purpose": "Compare your product against competitors to identify opportunities and industry best practices.",
+  "purpose": "A benchmarking analysis is primarily used to provide a point of reference for comparison in future versions of your design. This task is best completed during your discovery phase, right as you start working on the project, because it can also be used to help you understand the current state problems in more detail. \n\nActively, it can be conducted as a usability test or an unmoderated usability test. ",
   "tools": [
-    {
-      "name": "Spreadsheet",
-      "description": "Feature Comparison",
-      "icon": "fa-table"
-    },
-    {
-      "name": "Screen Capture",
-      "description": "Visual Documentation",
-      "icon": "fa-camera"
-    },
-    {
-      "name": "Miro/Figjam",
-      "description": "Analysis Board",
-      "icon": "fa-sticky-note"
-    },
     {
       "name": "Figma Slides",
       "description": "Insights Deck (Max 3 per piece of research)",
       "icon": "fa-presentation",
       "link": "https://www.figma.com/slides/RodMmoG77vJztZsM6Z3Ean/2025-Research-Playback?node-id=484-8400&t=2tZP1VJliVSeW8i6-1"
+    },
+    {
+      "name": "New Tool",
+      "description": "Tool description",
+      "icon": "fa-tool",
+      "logo": "",
+      "link": ""
     }
   ],
   "steps": [
