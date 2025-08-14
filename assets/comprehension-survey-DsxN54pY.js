@@ -1,4 +1,11 @@
-const e="comprehension-survey",t="Comprehension Survey",o="1 -2 hours",s="25 Participants",n="Low",i="A tool used to assess how well individuals understand written or spoken information",a=[{name:"Optimal Workshop",description:"Hosting your survey",icon:"fa-clipboard-list"},{name:"UserTesting",description:"Recruiting your participants",icon:"fa-video"},{name:"Figma Slides",description:"Insights Deck (Max 3 per piece of research) ",icon:"fa-tool",logo:"",link:"https://www.figma.com/slides/RodMmoG77vJztZsM6Z3Ean/2025-Research-Playback?node-id=484-8400&t=2tZP1VJliVSeW8i6-1"}],r=[{title:"Assess the screen",description:`Work out what it is that you want to test, it could be any of the following;
+const e="comprehension-survey",t="Comprehension Survey",o="1 -2 hours",s="25 Participants",n="Low",i="A tool used to assess how well individuals understand written or spoken information",a=[{name:"Optimal Workshop",description:"Hosting your survey",icon:"fa-clipboard-list"},{name:"Askable",description:"Recruiting your participants",icon:"fa-video"},{name:"Figma Slides",description:"Insights Deck (Max 3 per piece of research)",icon:"fa-presentation",link:"https://www.figma.com/slides/RodMmoG77vJztZsM6Z3Ean/2025-Research-Playback?node-id=484-8400&t=2tZP1VJliVSeW8i6-1"}],r=[{title:"Set Up Askable Study",description:`1. I have created some templates for you to duplicate for your studies, for a comprehension study, this one will be the third one in the list. 
+Press the three dots on the right side of the screen and then press duplicate, name your study appropriately and you can get started.
+
+2. I have added some default questions that will get you started, but your goal here is to add custom screening questions that target the specific people you want to test with. 
+
+Considerations
+ - Askable mandates that you need to have at least a few screener questions, they don't like it when we leave these blank and will block your study from going live. 
+ - If you want to go live with your study that day, make sure you go live with it at the latest before 3 pm, to have a chance for Askable to approve it before the end of the day. I will have a guide on what kind of screener questions you can ask. `,screenshot:"",screenshots:["Screenshot 2025-08-13 at 3.49.47â¯pm-1755064192134-667380268.png"],link:""},{title:"Assess the screen",description:`Work out what it is that you want to test, it could be any of the following;
 
 - Copy
 - Icons or something visual
