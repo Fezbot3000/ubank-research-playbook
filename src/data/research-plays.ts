@@ -32,7 +32,7 @@ export const researchPlays: ResearchPlay[] = [
     steps: [
       {
         stepNumber: 1,
-        title: "Benchmark Current State",
+        title: "Benchmarking Analysis",
         method: "benchmarking-analysis",
         description: "Establish baseline metrics and understand current user behaviour",
         duration: "1-2 days",
@@ -40,7 +40,7 @@ export const researchPlays: ResearchPlay[] = [
       },
       {
         stepNumber: 2,
-        title: "Validate Feature Concept",
+        title: "Comprehension Survey",
         method: "comprehension-survey",
         description: "Test if users understand the feature concept and value proposition",
         duration: "1-2 hours",
@@ -48,7 +48,7 @@ export const researchPlays: ResearchPlay[] = [
       },
       {
         stepNumber: 3,
-        title: "Test Initial Design",
+        title: "Moderated Usability Testing",
         method: "moderated-usability-testing",
         description: "Deep dive into usability issues with 1:1 sessions",
         duration: "1 day",
@@ -56,7 +56,7 @@ export const researchPlays: ResearchPlay[] = [
       },
       {
         stepNumber: 4,
-        title: "Validate at Scale",
+        title: "Unmoderated Usability Testing",
         method: "usability-testing",
         description: "Test refined design with larger sample for statistical confidence",
         duration: "2 days",
@@ -64,7 +64,7 @@ export const researchPlays: ResearchPlay[] = [
       },
       {
         stepNumber: 5,
-        title: "A/B Test Live Feature",
+        title: "A/B Testing",
         method: "ab-testing",
         description: "Test feature performance in live environment",
         duration: "2-4 weeks",
@@ -84,7 +84,7 @@ export const researchPlays: ResearchPlay[] = [
     steps: [
       {
         stepNumber: 1,
-        title: "Diagnose Current Issues",
+        title: "Heuristic Analysis",
         method: "heuristic-analysis",
         description: "Expert review to quickly identify obvious usability problems",
         duration: "2-3 days",
@@ -92,7 +92,7 @@ export const researchPlays: ResearchPlay[] = [
       },
       {
         stepNumber: 2,
-        title: "Understand User Behaviour",
+        title: "Moderated Usability Testing",
         method: "moderated-usability-testing",
         description: "Watch users interact with current feature to understand pain points",
         duration: "1 day",
@@ -100,7 +100,7 @@ export const researchPlays: ResearchPlay[] = [
       },
       {
         stepNumber: 3,
-        title: "Test Improved Design",
+        title: "A/B Testing",
         method: "ab-testing",
         description: "Compare current vs improved design performance",
         duration: "2-4 weeks",
@@ -120,7 +120,7 @@ export const researchPlays: ResearchPlay[] = [
     steps: [
       {
         stepNumber: 1,
-        title: "Test Current Content",
+        title: "Comprehension Survey",
         method: "comprehension-survey",
         description: "Measure baseline comprehension of existing content",
         duration: "1-2 hours",
@@ -128,7 +128,7 @@ export const researchPlays: ResearchPlay[] = [
       },
       {
         stepNumber: 2,
-        title: "Validate Improved Content",
+        title: "A/B Testing",
         method: "ab-testing",
         description: "Test original vs improved content performance",
         duration: "1-2 weeks",
@@ -148,7 +148,7 @@ export const researchPlays: ResearchPlay[] = [
     steps: [
       {
         stepNumber: 1,
-        title: "Capture User Journeys",
+        title: "Diary Study",
         method: "diary-study",
         description: "Understand user behaviour and needs over time in natural context",
         duration: "2-4 weeks",
@@ -156,7 +156,7 @@ export const researchPlays: ResearchPlay[] = [
       },
       {
         stepNumber: 2,
-        title: "Validate Insights",
+        title: "Moderated Usability Testing",
         method: "moderated-usability-testing",
         description: "Deep dive into specific findings with targeted sessions",
         duration: "1 day",
@@ -176,7 +176,7 @@ export const researchPlays: ResearchPlay[] = [
     steps: [
       {
         stepNumber: 1,
-        title: "Expert Review",
+        title: "Heuristic Analysis",
         method: "heuristic-analysis",
         description: "Get expert eyes on the design to catch obvious issues",
         duration: "2-3 days",
@@ -184,7 +184,7 @@ export const researchPlays: ResearchPlay[] = [
       },
       {
         stepNumber: 2,
-        title: "Quick User Feedback",
+        title: "Comprehension Survey",
         method: "comprehension-survey",
         description: "Fast user feedback on specific elements",
         duration: "1-2 hours",
@@ -204,7 +204,7 @@ export const researchPlays: ResearchPlay[] = [
     steps: [
       {
         stepNumber: 1,
-        title: "Understand Mental Models",
+        title: "Card Sorting",
         method: "card-sorting",
         description: "Learn how users naturally group and categorise information",
         duration: "3-5 days",
@@ -212,7 +212,7 @@ export const researchPlays: ResearchPlay[] = [
       },
       {
         stepNumber: 2,
-        title: "Validate Navigation",
+        title: "Tree Testing",
         method: "tree-testing",
         description: "Test if users can find information in your proposed structure",
         duration: "3-5 days",
@@ -220,7 +220,7 @@ export const researchPlays: ResearchPlay[] = [
       },
       {
         stepNumber: 3,
-        title: "Test Complete Experience",
+        title: "Unmoderated Usability Testing",
         method: "usability-testing",
         description: "Validate the full navigation experience with real tasks",
         duration: "2 days",
