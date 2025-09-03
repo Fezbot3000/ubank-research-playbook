@@ -228,6 +228,34 @@ export const researchPlays: ResearchPlay[] = [
       }
     ],
     tags: ["information-architecture", "navigation", "content-organisation", "structure"]
+  },
+  {
+    id: "user-satisfaction-measurement",
+    title: "User Satisfaction & Feedback Play",
+    scenario: "You need to measure user satisfaction and gather quantitative feedback on your product or feature",
+    objective: "Understand user satisfaction levels, identify improvement areas, and track changes over time",
+    timeline: "3-4 weeks", 
+    effort: "Medium",
+    outcome: "Quantitative satisfaction metrics and prioritised improvement areas",
+    steps: [
+      {
+        stepNumber: 1,
+        title: "Survey Research",
+        method: "survey",
+        description: "Gather quantitative data and opinions from a large number of users about satisfaction and attitudes",
+        duration: "2-3 weeks",
+        deliverable: "User satisfaction scores, demographic insights, and feedback themes"
+      },
+      {
+        stepNumber: 2,
+        title: "Moderated Usability Testing", 
+        method: "moderated-usability-testing",
+        description: "Dive deeper into specific pain points identified in survey responses",
+        duration: "1 day",
+        deliverable: "Detailed insights into satisfaction drivers and specific improvement recommendations"
+      }
+    ],
+    tags: ["satisfaction", "feedback", "quantitative", "measurement", "tracking"]
   }
 ];
 
