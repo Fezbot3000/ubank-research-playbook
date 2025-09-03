@@ -1,70 +1,60 @@
 {
   "slug": "heuristic-analysis",
   "title": "Heuristic Analysis",
-  "duration": "2-3 days",
-  "participants": "2-3 designers",
+  "duration": "2-3 Days",
+  "participants": "2-3 Designers",
   "complexity": "Low",
-  "purpose": "Quickly identify usability issues by evaluating your designs against established best practices - like having an experienced designer review your work.",
+  "purpose": "A heuristic analysis is primarily used to provide a point of reference for comparison in future versions of your design. This task is best completed during your discovery phase, right as you start working on the project, because it can also be used to help you understand the current state problems in more detail.\n\nA heuristic analysis can be conducted as a group within the design team for your project.",
   "tools": [
-    {
-      "name": "Figma",
-      "description": "Design Review",
-      "icon": "fa-paint-brush",
-      "link": "https://figma.com"
-    },
-    {
-      "name": "Heuristic Checklist",
-      "description": "Evaluation Framework",
-      "icon": "fa-list-check"
-    },
-    {
-      "name": "Screenshot Tool",
-      "description": "Issue Documentation",
-      "icon": "fa-camera"
-    },
     {
       "name": "Figma Slides",
       "description": "Insights Deck (Max 3 per piece of research)",
       "icon": "fa-presentation",
-      "link": "https://www.figma.com/slides/RodMmoG77vJztZsM6Z3Ean/2025-Research-Playback?node-id=484-8400&t=2tZP1VJliVSeW8i6-1"
+      "link": "https://www.figma.com/slides/RodMmoG77vJztZsM6Z3Ean/2025-Research-Playbook?node-id=484-8400&t=2tZP1VJliVSeW8i6-1"
+    },
+    {
+      "name": "Askable",
+      "description": "Recruitment and moderation",
+      "icon": "fa-users",
+      "link": ""
     }
   ],
   "steps": [
     {
-      "title": "Understand when to use heuristic analysis",
-      "description": "Think of heuristic analysis as getting a fresh pair of experienced eyes on your design. It's not user testing - you won't learn what real customers think. Instead, you're checking if your design follows proven usability principles.\n\nIt's brilliant for:\n- Catching obvious issues before user testing\n- Getting quick feedback when you're too close to the design\n- When you don't have time/budget for user research\n\nIt won't tell you:\n- If customers will actually use a feature\n- If your business logic makes sense\n- How real users behave\n\nThe beauty? You can do it in a couple of days with just your design team.",
-      "screenshot": "",
-      "screenshots": []
+      "title": "Define the scope",
+      "description": "Think of heuristic analysis as getting a fresh pair of experienced eyes on your design. It's not user testing - you won't learn what real customers think. Instead, you're checking if your design follows proven usability principles.\n\nIt's brilliant for:\n- Catching obvious issues before user testing\n- Getting quick feedback when you're too close to the design\n- When you don't have time/budget for user research\n\nIt won't tell you:\n- If customers will actually use a feature\n- If your business logic makes sense\n- How real users behave\n\nThe beauty? You can do it in a couple of days with just your design team."
     },
     {
-      "title": "Set up your review",
-      "description": "You'll need 2-3 designers to review independently (fresh eyes spot different issues).\n\nGive reviewers:\n- Link to the Figma file\n- Brief context about the feature\n- The user journey to test\n- Access to the Figjam template\n\nDon't:\n- Tell them what you think the problems are\n- Have the original designer do the review\n- Rush them - allow at least half a day",
-      "screenshot": "",
-      "screenshots": []
+      "title": "Add Your Screens",
+      "description": "Using Figjam, (in link above) your job at this step is to add one screenshot for every screen that you are testing, which should correlate to your screen goals. Every screen you add has a screen goal, and every screen goal has a screenshot of that screen so that people documenting feedback can note down the feedback.\n\nAn example of this could be you start a user on the home page, you might not add a screenshot for that, as you're not looking to collect any feedback on that home page component."
     },
     {
-      "title": "Review against Nielsen's heuristics",
-      "description": "Each reviewer checks the design against these 10 principles:\n\n1. Visibility of system status - Does the app show what's happening?\n2. Match real world - Using plain English or banking jargon?\n3. User control - Can customers undo/cancel actions?\n4. Consistency - Do similar things work the same way?\n5. Error prevention - Stopping mistakes before they happen?\n6. Recognition over recall - Can users see their options?\n7. Flexibility - Shortcuts for experienced users?\n8. Aesthetic design - Clean and focused interface?\n9. Error recovery - Helpful error messages?\n10. Help & documentation - Easy to find help?\n\nFor banking, also check:\n- Security visibility - Is data protection clear?\n- Financial transparency - Are fees obvious?\n- Regulatory compliance - Meeting banking rules?",
-      "screenshot": "",
-      "screenshots": []
+      "title": "Use Figma FigJam",
+      "description": "I have created some templates for you to duplicate for your studies, for user testing, this one will be the first one in the list.\nPress the three dots on the right side of the screen and then press duplicate, name your study appropriately and you can get started.\n\nYou can see the second screenshot that I have uploaded is the recruit page. I recommend that the first thing you do is start thinking about who you want to run the study with. Again, I have uploaded some default questions that will get you started, but your goal here is to add custom screening questions that target the specific people you want to test with.\n\nConsiderations\n- Askable mandates that you need to have at least a few screener questions, they don't like it when we leave these blank and will block your study from going live.\n- If you want to go live with your study that day, make sure you go live with it at the latest before 3 pm, to have a chance for Askable to approve it before the end of the day. I will have a guide on what kind of screener questions you can ask."
     },
     {
-      "title": "Document issues with severity ratings",
-      "description": "In the Figjam template, for each issue note:\n- Which heuristic it breaks\n- Where it happens (screenshot)\n- Why it's a problem\n- Severity rating\n\nSeverity scale:\n1. Cosmetic - fix if time\n2. Minor - low priority\n3. Major - important but not urgent\n4. Severe - must fix before launch\n5. Catastrophic - blocks users completely\n\nExample:\n\"Transfer screen has no back button (breaks User Control). Severity 4 - customers can't fix mistakes. Add 'Edit' button.\"",
-      "screenshot": "",
-      "screenshots": []
+      "title": "Create Test Scenarios",
+      "description": "Test scenarios are the backbone of your heuristic evaluation. They're user-focused situations that help evaluators understand the context in which users would interact with your design.\n\nA good test scenario:\n- Is based on a real user goal or task\n- Provides sufficient context without being leading\n- Allows evaluators to walk through the user journey step-by-step\n- Covers the key flows you want to evaluate\n\nScenario Example:\n\"You're a small business owner who needs to transfer $5,000 to pay a supplier. You've logged into your banking app and need to complete this payment today. Walk through how you would accomplish this task.\"\n\nNot: \"Click on the transfer button and send money\" (too prescriptive)\nNot: \"Use the banking app\" (too vague)\n\nCreate 3-5 scenarios that cover your main user journeys. Each scenario should take 10-15 minutes to evaluate."
     },
     {
-      "title": "Consolidate findings and prioritise",
-      "description": "Bring reviewers together to merge findings. You'll see overlap - that's good, it confirms real issues.\n\nCreate a prioritised list:\n- Must fix (severity 4-5)\n- Should fix (severity 3)\n- Nice to have (severity 1-2)\n\nTurn findings into specific recommendations:\n\"Problem: No daily limit shown on transfers\nImpact: Failed transfers, customer frustration\nSolution: Show 'Daily limit: £10,000' below amount field\nEffort: Small - data already exists\"\n\nGroup by:\n- Quick wins (high impact, low effort)\n- Important fixes (high impact, high effort)\n- Nice-to-haves (low impact)",
-      "screenshot": "",
-      "screenshots": []
+      "title": "Set up Askable Study",
+      "description": "I have created some templates for you to duplicate for your studies, for user testing, this one will be the first one in the list.\nPress the three dots on the right side of the screen and then press duplicate, name your study appropriately and you can get started.\n\nYou can see the second screenshot that I have uploaded is the recruit page. I recommend that the first thing you do is start thinking about who you want to run the study with. Again, I have uploaded some default questions that will get you started, but your goal here is to add custom screening questions that target the specific people you want to test with.\n\nConsiderations\n- Askable mandates that you need to have at least a few screener questions, they don't like it when we leave these blank and will block your study from going live.\n- If you want to go live with your study that day, make sure you go live with it at the latest before 3 pm, to have a chance for Askable to approve it before the end of the day. I will have a guide on what kind of screener questions you can ask."
     },
     {
-      "title": "Present findings and track fixes",
-      "description": "Your presentation should include:\n- Top 3 critical issues with screenshots\n- Quick wins that make a big difference\n- Patterns across the design\n- Clear next steps\n\nDon't dump a spreadsheet - tell a story about improving the customer experience.\n\nAfter presenting:\n- Add critical issues to sprint backlog\n- Assign owners for each fix\n- Track which issues get fixed\n- Share learnings with other teams\n\nRemember: The goal is to improve the design, not show how many problems you found.",
-      "screenshot": "",
-      "screenshots": []
+      "title": "Accepting Participants into the Study - Join Testing Sessions",
+      "description": "When you create your study and launch it.\n\nYou will periodically need to check back in and accept participants into the study. When you do this, each participant will get a link. This is the link that you will click on when you are ready to join your sessions.\n\nThere will also be a link that you can click on, which will be for your moderators the people who are helping you take notes.\nThings to consider\n- Be careful not to share the facilitator link with your moderators.\n- When moderators are joining your sessions, be careful when you accept them, as it doesn't always work, they will need to reload their page and you will need to approve them into the study again. (there is a small glitch in askable) You can tell when someone has successfully joined when you are in the session, though."
+    },
+    {
+      "title": "Assigning Participants into the Study - Join Testing Sessions",
+      "description": "You have a few options, but the key one for an unmoderated test you will use is the top one \"Prototype test\" and the \"Open Answer\" or the \"Multiple Choice\"\n\nPrototype Test - to add your scenarios, remember one of these per question, one of these per task, if you have 5 task that means you will do this 5 times.\nOpen Answer - to validate with users anything else they want to share with us.\nMuliple choice - Can be used to measure feelings, or follow up questions etc"
+    },
+    {
+      "title": "Adding another block",
+      "description": "You have a few options, but the key one for an unmoderated test you will use is the top one \"Prototype test\" and the \"Open Answer\" or the \"Multiple Choice\"\n\nPrototype Test - to add your scenarios, remember one of these per question, one of these per task, if you have 5 task that means you will do this 5 times.\nOpen Answer - to validate with users anything else they want to share with us.\nMuliple choice - Can be used to measure feelings, or follow up questions etc"
+    },
+    {
+      "title": "Document Insights",
+      "description": "Arguably one of the most important steps of the entire process, producing your presentation at the end of your study is the vessel to help your stakeholders understand where you are at with the design, concept, etc etc. The goal of this presentation is to share insights, not present raw data about pass and fail.\n\nTo write an effective insight, you will need to process your testing results, consider their implications, and then think through how to communicate this to your stakeholders.\nAn example of a good insight: \"People want to see the details of their payment immediately after making the payment.\"\nAn example of a not so good insight: \"Of the 100 people surveyed, 94% had used a rewards or loyalty offer in the past 6 months. Interestingly 45% of participants said the rewards offers made them spend more than they normally would.\"\n\nYou can see in the \"not so good\" insight that it requires the reader to process the result and discover meaning from that result. This is the job of your insights, to have done that processing for the reader and be able to share the \"so what\" so they can take your insight and be able to make a decision based on it.\n\nPlease aim for no more than 3 insights per slide deck, you want to summarise the test into a maximum of 3 key takeaways that your audience can take and action."
     }
   ]
 }

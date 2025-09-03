@@ -64,7 +64,7 @@ The Audience Map segments customers into 9 distinct archetypes based on two dime
 To identify which archetype a participant belongs to, we need to assess:
 1. **Financial Security Level** (Survivor/Arriver/Thriver)
 2. **Financial Management Complexity** (First/Serious/Settled Stepper)
-3. **Key Behaviors and Attitudes**
+3. **Key Behaviours and Attitudes**
 
 ### Mapping Questions to Archetypes
 
@@ -104,7 +104,7 @@ To identify which archetype a participant belongs to, we need to assess:
 
 ### 16. What best describes your savings situation?
 **Type:** Multiple choice  
-**Purpose:** Identify specific archetype behaviors  
+**Purpose:** Identify specific archetype behaviours  
 **Options:**
 - I have no savings and often run out before payday (Fresh Starter/Underdog)
 - I save small amounts when I can (Impulse Spender)
@@ -331,7 +331,7 @@ Based on the combination of Life Stage + Journey Stage:
 
 ## Screener Categories Summary
 
-### Financial Behavior Screening
+### Financial Behaviour Screening
 - Primary bank usage (Q1)
 - Banking preferences and satisfaction (Q2)
 - Banking app functionality usage (Q3)

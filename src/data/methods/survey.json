@@ -4,7 +4,7 @@
   "duration": "2-3 weeks",
   "participants": "100+ respondents",
   "complexity": "Medium",
-  "purpose": "Gather quantitative data and opinions from a large number of users to understand attitudes and behaviors.",
+  "purpose": "Gather quantitative data and opinions from a large number of users to understand attitudes and behaviours.",
   "tools": [
     {
       "name": "Typeform",
@@ -30,6 +30,6 @@
     "Test Survey",
     "Recruit Participants",
     "Collect Responses",
-    "Analyze & Report Results"
+    "Analyse & Report Results"
   ]
 }

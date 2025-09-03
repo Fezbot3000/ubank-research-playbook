@@ -1,0 +1,55 @@
+# This is a sample build configuration for JavaScript.
+# Check our guides at https://confluence.atlassian.com/x/14UWN for more examples.
+# Only use spaces to indent your .yml configuration.
+# -----
+# You can specify a custom docker image from Docker Hub as your build environment.
+image: node:18
+
+pipelines:
+  default:
+    - step:
+        name: Build and Test
+        caches:
+          - node
+        script:
+          - npm ci
+          - npm run build
+          - npm run type-check
+        artifacts:
+          - dist/**
+    
+  branches:
+    main:
+      - step:
+          name: Build for Production
+          caches:
+            - node
+          script:
+            - npm ci
+            - npm run build
+          artifacts:
+            - dist/**
+      
+      # Add deployment step here based on your hosting choice
+      # Examples:
+      
+      # For AWS S3:
+      # - step:
+      #     name: Deploy to S3
+      #     deployment: production
+      #     script:
+      #       - pipe: atlassian/aws-s3-deploy:1.1.0
+      #         variables:
+      #           AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID
+      #           AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
+      #           AWS_DEFAULT_REGION: $AWS_DEFAULT_REGION
+      #           S3_BUCKET: $S3_BUCKET
+      #           LOCAL_PATH: 'dist'
+      
+      # For Netlify:
+      # - step:
+      #     name: Deploy to Netlify
+      #     deployment: production
+      #     script:
+      #       - npm install -g netlify-cli
+      #       - netlify deploy --prod --dir=dist --site=$NETLIFY_SITE_ID --auth=$NETLIFY_AUTH_TOKEN 

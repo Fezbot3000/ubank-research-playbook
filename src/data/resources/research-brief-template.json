@@ -3,7 +3,7 @@
   "sections": [
     {
       "title": "Project Overview",
-      "content": "Provide a brief description of the project and its context within the organization."
+      "content": "Provide a brief description of the project and its context within the organisation."
     },
     {
       "title": "Research Objectives",
@@ -15,7 +15,7 @@
     },
     {
       "title": "Target Audience",
-      "content": "Describe the participants you need for this research:\n• Demographics\n• Behaviors\n• Experience level\n• Other relevant criteria"
+      "content": "Describe the participants you need for this research:\n• Demographics\n• Behaviours\n• Experience level\n• Other relevant criteria"
     },
     {
       "title": "Methodology",

@@ -4,7 +4,7 @@
   "duration": "2-4 weeks",
   "participants": "8-15 participants",
   "complexity": "High",
-  "purpose": "Understand user behaviors, motivations, and experiences over time in their natural environment.",
+  "purpose": "Understand user behaviours, motivations, and experiences over time in their natural environment.",
   "tools": [
     {
       "name": "dscout",
@@ -29,7 +29,7 @@
     "Onboard & Train Participants",
     "Monitor Submissions",
     "Conduct Follow-up Interviews",
-    "Analyze Patterns Over Time",
+    "Analyse Patterns Over Time",
     "Create Journey Maps"
   ]
 }

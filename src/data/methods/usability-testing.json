@@ -3,8 +3,8 @@
   "title": "Unmoderated Usability Testing",
   "duration": "2 days",
   "participants": "25 Participants",
-  "complexity": "low",
-  "purpose": "Just like moderated usability testing, unmoderated testing gives you the ability to test your prototypes with 25 people to seek feedback and still maintain the rich insights that you get in a moderated usability testing session. \n\nIt's important to know that it takes a bit more time to set these up, but the insights you gain from this type of testing are invaluable. \n - Heatmaps that show you real statistical behaviour of a user, where they went, and then also how they felt. \n - It merges the qualitative insights of a moderated session and combines them with a large sample size. ",
+  "complexity": "Low",
+  "purpose": "Just like moderated usability testing, unmoderated testing gives you the ability to test your prototypes with 25 people to seek feedback and still maintain the rich insights that you get in a moderated usability testing session.\n\nIt's important to know that it takes a bit more time to set these up, but the insights you gain from this type of testing are invaluable.\n- Heatmaps that show you real statistical behaviour of a user, where they went, and then also how they felt.\n- It merges the qualitative insights of a moderated session and combines them with a large sample size.",
   "tools": [
     {
       "name": "Askable",
@@ -16,111 +16,45 @@
       "name": "Figma Slides",
       "description": "Insights Deck (Max 3 per piece of research)",
       "icon": "fa-presentation",
-      "link": "https://www.figma.com/slides/RodMmoG77vJztZsM6Z3Ean/2025-Research-Playback?node-id=484-8400&t=2tZP1VJliVSeW8i6-1"
-    }
-  ],
-  "screenshots": [
-    {
-      "filename": "00-screen-goals.png",
-      "caption": "Define screen goals and user objectives"
-    },
-    {
-      "filename": "01-Add-your-screens.png",
-      "caption": "Add your screens to the testing flow"
-    },
-    {
-      "filename": "02-Creating-your-scenario.png",
-      "caption": "Create realistic user scenarios"
-    },
-    {
-      "filename": "03-Setting-Up-askable.png",
-      "caption": "Set up your study on Askable platform"
-    },
-    {
-      "filename": "04-JoiningSessions.png",
-      "caption": "Join and facilitate testing sessions"
-    },
-    {
-      "filename": "05-DocumentFeelings.png",
-      "caption": "Document user feelings and emotions"
-    },
-    {
-      "filename": "05-questions-to-ask.png",
-      "caption": "Key questions to ask during sessions"
-    },
-    {
-      "filename": "06-final-product.png",
-      "caption": "Final product presentation"
-    },
-    {
-      "filename": "06-final-product2.png",
-      "caption": "Additional final product views"
-    },
-    {
-      "filename": "07-DocumentInsights.png",
-      "caption": "Document insights and findings"
+      "link": "https://www.figma.com/slides/RodMmoG77vJztZsM6Z3Ean/2025-Research-Playbook?node-id=484-8400&t=2tZP1VJliVSeW8i6-1"
     }
   ],
   "steps": [
     {
       "title": "Screen Goals",
-      "description": "Screen Goals are probably one of the most important parts of the process. They set you and your test up for success by allowing you to really think through what you are trying to learn on each of the screens. \n\nThe way we write them doesn't have to be complicated; it just needs to be meaningful to you and others who are reading it, so that they can understand how to measure if you have achieved the goal or not. \n\nThings to do: \n- Write in plain English so that they are easy to comprehend. \n\nThings not to do: \n - Don't write them in a technical way that takes time to process the real meaning ",
-      "screenshot": "00-screen-goals.png"
+      "description": "Screen Goals are probably one of the most important parts of the process. They set you and your test up for success by allowing you to really think through what you are trying to learn on each of the screens.\n\nThe way we write them doesn't have to be complicated; it just needs to be meaningful to you and others who are reading it, so that they can understand how to measure if you have achieved the goal or not.\n\nThings to do:\n- Write in plain English so that they are easy to comprehend.\n\nThings not to do:\n- Don't write them in a technical way that takes time to process the real meaning"
     },
     {
       "title": "Add Your Screens",
-      "description": "Using Figjam, (in link above) your job at this step is to add one screenshot for every screen that you are testing, which should correlate to your screen goals. Every screen you add has a screen goal, and every screen goal has a screenshot of that screen so that people documenting feedback can note down the feedback. \n\nAn example of this could be you start a user on the home page, you might not add a screenshot for that, as you're not looking to collect any feedback on that home page component. \n",
-      "screenshot": "01-Add-your-screens.png"
+      "description": "Using Figjam, (in link above) your job at this step is to add one screenshot for every screen that you are testing, which should correlate to your screen goals. Every screen you add has a screen goal, and every screen goal has a screenshot of that screen so that people documenting feedback can note down the feedback.\n\nAn example of this could be you start a user on the home page, you might not add a screenshot for that, as you're not looking to collect any feedback on that home page component."
     },
     {
       "title": "Create Your Scenarios",
-      "description": "To write a good scenario, first and foremost, you need to make sure that you have written your screen goals. You will need to know what you are testing before you can write these scenarios because they determine how you create your scenarios.\n\nThings not to do:\n- Don't create leading scenarios, for example \"click on pay and pay your friend $30 for dinner the other night\" The leading part is using the words \"pay\" as that is what we use in our experience, when users read your tasks they can sometimes be like homing pidgeons and target the key words that they see. \nWith this example, even though you might have a screen goal and you are trying to test the payment flow, asking a leading question like the example above can skew the result.",
-      "screenshot": "02-Creating-your-scenario.png"
+      "description": "To write a good scenario, first and foremost, you need to make sure that you have written your screen goals. You will need to know what you are testing before you can write these scenarios because they determine how you create your scenarios.\n\nThings not to do:\n- Don't create leading scenarios, for example \"click on pay and pay your friend $30 for dinner the other night\" The leading part is using the words \"pay\" as that is what we use in our experience, when users read your tasks they can sometimes be like homing pidgeons and target the key words that they see.\nWith this example, even though you might have a screen goal and you are trying to test the payment flow, asking a leading question like the example above can skew the result."
     },
     {
       "title": "Set Up Askable Study",
-      "description": "1. I have created some templates for you to duplicate for your studies, for user testing, this one will be the first one in the list. \nPress the three dots on the right side of the screen and then press duplicate, name your study appropriately and you can get started.\n\n2. You can see the second screenshot that I have uploaded is the recruit page. I recommend that the first thing you do is start thinking about who you want to run the study with. Again, I have uploaded some default questions that will get you started, but your goal here is to add custom screening questions that target the specific people you want to test with. \n\nConsiderations\n - Askable mandates that you need to have at least a few screener questions, they don't like it when we leave these blank and will block your study from going live. \n - If you want to go live with your study that day, make sure you go live with it at the latest before 3 pm, to have a chance for Askable to approve it before the end of the day. I will have a guide on what kind of screener questions you can ask. \n - ",
-      "screenshot": "",
-      "screenshots": [
-        "Screenshot 2025-08-13 at 9.47.07am-1755042443037-200082741.png",
-        "Screenshot 2025-08-13 at 9.48.18am-1755042500428-449990320.png"
-      ]
+      "description": "I have created some templates for you to duplicate for your studies, for user testing, this one will be the first one in the list.\nPress the three dots on the right side of the screen and then press duplicate, name your study appropriately and you can get started.\n\nYou can see the second screenshot that I have uploaded is the recruit page. I recommend that the first thing you do is start thinking about who you want to run the study with. Again, I have uploaded some default questions that will get you started, but your goal here is to add custom screening questions that target the specific people you want to test with.\n\nConsiderations\n- Askable mandates that you need to have at least a few screener questions, they don't like it when we leave these blank and will block your study from going live.\n- If you want to go live with your study that day, make sure you go live with it at the latest before 3 pm, to have a chance for Askable to approve it before the end of the day. I will have a guide on what kind of screener questions you can ask."
     },
     {
       "title": "Set up your prototype questions",
-      "description": "In the template, I have set up an example first question and second question to get you started. You will need to start of by creating and uploading a link to your figma prototype and attaching it to the first option with the blue icon. You will see in the screenshot what it should look like. \n\nEach task/ scenario that you add will be considered as a block, which means that this blue example that I have created will be considered your first task that you give to users.",
-      "screenshot": "",
-      "screenshots": [
-        "Screenshot 2025-08-13 at 9.35.19am-1755041721590-536165667.png"
-      ]
+      "description": "In the template, I have set up an example first question and second question to get you started. You will need to start of by creating and uploading a link to your figma prototype and attaching it to the first option with the blue icon. You will see in the screenshot what it should look like.\n\nEach task/ scenario that you add will be considered as a block, which means that this blue example that I have created will be considered your first task that you give to users."
     },
     {
       "title": "Adding another block",
-      "description": "You have a few options, but the key one for an unmoderated test you will use is the top one \"Prototype test\" and the \"Open Answer\" or the \"Multiple Choice\" \n\nPrototype Test - to add your scenarios, remember one of these per question, one of these per task, if you have 5 task that means you will do this 5 times. \nOpen Answer - to validate with users anything else they want to share with us. \nMuliple choice - Can be used to measure feelings, or follow up questions etc ",
-      "screenshot": "",
-      "screenshots": [
-        "Screenshot 2025-08-13 at 9.43.16am-1755042198271-721757410.png"
-      ]
+      "description": "You have a few options, but the key one for an unmoderated test you will use is the top one \"Prototype test\" and the \"Open Answer\" or the \"Multiple Choice\"\n\nPrototype Test - to add your scenarios, remember one of these per question, one of these per task, if you have 5 task that means you will do this 5 times.\nOpen Answer - to validate with users anything else they want to share with us.\nMuliple choice - Can be used to measure feelings, or follow up questions etc"
     },
     {
       "title": "CHECK your test, testing the test",
-      "description": "One of the risks of running an unmoderated usability test is that if there is an issue with your test, you don't have the opportunity to make any fixes, which means if you are testing with 25 people, all 25 people will have that issue and could warrant the test as a fail. When we run a moderated test we have the ability to fix issues on the fly if we notice small bugs, we have the ability to react with the first participant and make sure the subsequent participants run smoothly. This is why one of the most important aspects of running your unmoderated test is testing it yourself, actually going through every single step. \n\nFor an unmoderated usability test with 25 participants, the cost is in the range of $1000 - $3000. An unmoderated test requires more time upfront, making sure that everything is correct before you go live, compared to more time after the fact processing a moderated usability test results. \n\n1. Go through the live link and follow the instructions to see if you can complete all the tasks\n2. Make sure the prototype works as intended \n3. Read the questions to make sure that the questions are not leading \n4. Make sure that the interactions make sense for a user using their computer with a mouse. ",
-      "screenshot": "",
-      "screenshots": []
+      "description": "One of the risks of running an unmoderated usability test is that if there is an issue with your test, you don't have the opportunity to make any fixes, which means if you are testing with 25 people, all 25 people will have that issue and could warrant the test as a fail. When we run a moderated test we have the ability to fix issues on the fly if we notice small bugs, we have the ability to react with the first participant and make sure the subsequent participants run smoothly. This is why one of the most important aspects of running your unmoderated test is testing it yourself, actually going through every single step.\n\nFor an unmoderated usability test with 25 participants, the cost is in the range of $1000 - $3000. An unmoderated test requires more time upfront, making sure that everything is correct before you go live, compared to more time after the fact processing a moderated usability test results.\n\n1. Go through the live link and follow the instructions to see if you can complete all the tasks\n2. Make sure the prototype works as intended\n3. Read the questions to make sure that the questions are not leading\n4. Make sure that the interactions make sense for a user using their computer with a mouse."
     },
     {
       "title": "Reviewing the results in Askable",
-      "description": "Below you can see an example of what the results page looks like right now. I presume that in the future this page is going ot change and improve, adding more features. This page is going to need to be updated as Askable updates its platform; most of the steps before this one shouldn't need to change. \n \n - Each of your scenarios will have an individual page, and you can see the paths that people took; it will break them down and group them up. \n - Each grouping (Collection of users that followed a similar path) will have its own recording and heat maps that you can review to understand what the different people did. \n - In the top right corner, you can see the download button, which can be used if you want to download the verbatim responses and then assess them separately outside of Askable. \n\nHeatmaps\nHeatmaps are brilliant as they give us a fascinating insight into where users are trying to interact with when using our prototypes. Having a fully working prototype could also reveal to us truly how users navigate our application and give us visibility on behaviour that we haven't been able to observe before.",
-      "screenshot": "",
-      "screenshots": [
-        "Screenshot 2025-08-13 at 10.24.31am-1755044689434-162259866.png",
-        "Screenshot 2025-08-13 at 10.30.52am-1755045055950-67978298.png"
-      ]
+      "description": "Below you can see an example of what the results page looks like right now. I presume that in the future this page is going ot change and improve, adding more features. This page is going to need to be updated as Askable updates its platform; most of the steps before this one shouldn't need to change.\n\n- Each of your scenarios will have an individual page, and you can see the paths that people took; it will break them down and group them up.\n- Each grouping (Collection of users that followed a similar path) will have its own recording and heat maps that you can review to understand what the different people did.\n- In the top right corner, you can see the download button, which can be used if you want to download the verbatim responses and then assess them separately outside of Askable.\n\nHeatmaps\nHeatmaps are brilliant as they give us a fascinating insight into where users are trying to interact with when using our prototypes. Having a fully working prototype could also reveal to us truly how users navigate our application and give us visibility on behaviour that we haven't been able to observe before."
     },
     {
       "title": "Document Insights",
-      "description": "Arguably one of the most important steps of the entire process, producing your presentation at the end of your study is the vessel to help your stakeholders understand where you are at with the design, concept, etc etc. The goal of this presentation is to share insights, not present raw data about pass and fail.\n\nTo write an effective insight, you will need to process your testing results, consider their implications, and then think through how to communicate this to your stakeholders. \nAn example of a good insight: \"People want to see the details of their payment immediately after making the payment.\" \nAn example of a not so good insight: \"Of the 100 people surveyed, 94% had used a rewards or loyalty offer in the past 6 months. Interestingly 45% of participants said the rewards offers made them spend more than they normally would.\"\n\nYou can see in the not so good insight.",
-      "screenshot": "07-DocumentInsights.png"
+      "description": "Arguably one of the most important steps of the entire process, producing your presentation at the end of your study is the vessel to help your stakeholders understand where you are at with the design, concept, etc etc. The goal of this presentation is to share insights, not present raw data about pass and fail.\n\nTo write an effective insight, you will need to process your testing results, consider their implications, and then think through how to communicate this to your stakeholders.\nAn example of a good insight: \"People want to see the details of their payment immediately after making the payment.\"\nAn example of a not so good insight: \"Of the 100 people surveyed, 94% had used a rewards or loyalty offer in the past 6 months. Interestingly 45% of participants said the rewards offers made them spend more than they normally would.\"\n\nYou can see in the not so good insight."
     }
   ]
 }

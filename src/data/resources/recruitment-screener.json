@@ -14,7 +14,7 @@
       "content": "4. How often do you use [product/service]?\n   [ ] Daily\n   [ ] Weekly\n   [ ] Monthly\n   [ ] Rarely\n   [ ] Never\n\n5. How long have you been using [product/service]?\n   [ ] Less than 6 months\n   [ ] 6 months - 1 year\n   [ ] 1-2 years\n   [ ] More than 2 years\n   [ ] I don't use it"
     },
     {
-      "title": "Behavioral Questions",
+      "title": "Behavioural Questions",
       "content": "6. Which of the following activities do you do regularly? (Select all that apply)\n   [ ] Activity A\n   [ ] Activity B\n   [ ] Activity C\n   [ ] None of the above\n\n7. What are your main challenges with [topic area]?\n   _________________"
     },
     {

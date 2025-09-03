@@ -1,7 +1,8 @@
 import React, { useState, useMemo, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { methods, getMethodsWithUpdatedTitles, Method } from '../data/methods';
-import { Card, Button, Icon } from '../design-system';
+import { researchPlays } from '../data/research-plays';
+import { Card, Button, Icon, Badge } from '../design-system';
 import DecisionTree from '../components/DecisionTree';
 import Modal from '../components/Modal';
 
@@ -41,6 +42,20 @@ export default function HomePage() {
     'fa-chart-bar': 'trending-up'
   };
 
+  // Method descriptions
+  const methodDescriptions: Record<string, string> = {
+    'comprehension-survey': 'Test if users understand content and instructions',
+    'usability-testing': 'Test designs with real users at scale (25 participants)',
+    'moderated-usability-testing': 'One-on-one testing sessions with live feedback',
+    'card-sorting': 'Learn how users organise and categorise information',
+    'tree-testing': 'Test if users can find information in your navigation',
+    'survey': 'Gather quantitative data from large groups of users',
+    'benchmarking-analysis': 'Measure current performance for comparison',
+    'diary-study': 'Understand user behaviour over time in natural context',
+    'ab-testing': 'Compare two versions to see which performs better',
+    'heuristic-analysis': 'Expert review to identify usability issues quickly'
+  };
+
   const methodCards = useMemo(() => 
     dynamicMethods.map((m) => (
       <Link 
@@ -62,6 +77,14 @@ export default function HomePage() {
             />
           </div>
           <h3>{m.title}</h3>
+          <p style={{
+            color: hoveredMethod === m.slug ? 'rgba(255, 255, 255, 0.9)' : 'var(--color-text-secondary)',
+            fontSize: '0.9rem',
+            lineHeight: '1.4',
+            margin: '8px 0 0 0'
+          }}>
+            {methodDescriptions[m.slug] || 'Research method'}
+          </p>
         </Card>
       </Link>
     )), [hoveredMethod, dynamicMethods]);
@@ -216,6 +239,217 @@ export default function HomePage() {
           Got it
         </Button>
       </Modal>
+
+      {/* Research Plays Section */}
+      <section style={{
+        padding: 'var(--spacing-3xl) var(--spacing-lg)',
+        backgroundColor: 'var(--color-background-secondary)',
+        borderTop: '1px solid var(--color-border)'
+      }}>
+        <div style={{
+          maxWidth: '1200px',
+          margin: '0 auto'
+        }}>
+          {/* Section Header */}
+          <div style={{ 
+            textAlign: 'center', 
+            marginBottom: 'var(--spacing-3xl)' 
+          }}>
+            <h2 style={{ 
+              fontSize: 'var(--font-size-h4)',
+              fontWeight: 'var(--font-weight-semibold)',
+              marginBottom: 'var(--spacing-md)',
+              color: 'var(--color-text-primary)',
+              fontFamily: 'var(--font-family-primary)'
+            }}>
+              Research Plays
+            </h2>
+            <p style={{
+              fontSize: 'var(--font-size-lg)',
+              color: 'var(--color-text-secondary)',
+              maxWidth: '600px',
+              margin: '0 auto',
+              lineHeight: 'var(--line-height-relaxed)'
+            }}>
+              Ready-to-use research workflows for common scenarios. Each play is a tested sequence of methods designed to achieve specific outcomes.
+            </p>
+          </div>
+
+          {/* Plays Grid */}
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(400px, 1fr))',
+            gap: 'var(--spacing-xl)'
+          }}>
+            {researchPlays.map((play) => (
+              <Card 
+                key={play.id} 
+                style={{ 
+                  padding: 'var(--spacing-xl)',
+                  height: '100%',
+                  display: 'flex',
+                  flexDirection: 'column'
+                }}
+              >
+                {/* Card Header */}
+                <div style={{ marginBottom: 'var(--spacing-lg)' }}>
+                  <div style={{ 
+                    display: 'flex', 
+                    alignItems: 'flex-start', 
+                    justifyContent: 'space-between',
+                    marginBottom: 'var(--spacing-sm)',
+                    gap: 'var(--spacing-md)'
+                  }}>
+                    <h3 style={{ 
+                      fontSize: 'var(--font-size-xl)',
+                      fontWeight: 'var(--font-weight-semibold)',
+                      margin: 0,
+                      color: 'var(--color-text-primary)',
+                      lineHeight: 'var(--line-height-tight)'
+                    }}>
+                      {play.title}
+                    </h3>
+                    <div style={{
+                      display: 'flex',
+                      gap: 'var(--spacing-xs)',
+                      flexShrink: 0
+                    }}>
+                      <Badge 
+                        variant={play.effort === 'High' ? 'error' : play.effort === 'Medium' ? 'warning' : 'success'} 
+                        size="sm"
+                      >
+                        {play.effort}
+                      </Badge>
+                      <Badge variant="info" size="sm">
+                        {play.timeline}
+                      </Badge>
+                    </div>
+                  </div>
+                  
+                  <p style={{
+                    fontSize: 'var(--font-size-sm)',
+                    color: 'var(--color-text-secondary)',
+                    fontStyle: 'italic',
+                    marginBottom: 'var(--spacing-md)',
+                    lineHeight: 'var(--line-height-normal)'
+                  }}>
+                    "{play.scenario}"
+                  </p>
+                  
+                  <p style={{
+                    fontSize: 'var(--font-size-base)',
+                    color: 'var(--color-text-primary)',
+                    marginBottom: 'var(--spacing-lg)',
+                    lineHeight: 'var(--line-height-relaxed)'
+                  }}>
+                    {play.objective}
+                  </p>
+                </div>
+
+                {/* Steps Section */}
+                <div style={{ 
+                  flex: '1', 
+                  marginBottom: 'var(--spacing-lg)' 
+                }}>
+                  <h4 style={{ 
+                    fontSize: 'var(--font-size-sm)',
+                    fontWeight: 'var(--font-weight-semibold)',
+                    color: 'var(--color-text-secondary)',
+                    marginBottom: 'var(--spacing-md)',
+                    textTransform: 'uppercase',
+                    letterSpacing: '0.05em',
+                    lineHeight: 'var(--line-height-tight)'
+                  }}>
+                    Workflow Steps
+                  </h4>
+                  <div style={{ 
+                    display: 'flex', 
+                    flexDirection: 'column', 
+                    gap: 'var(--spacing-sm)' 
+                  }}>
+                    {play.steps.map((step) => (
+                      <div 
+                        key={step.stepNumber}
+                        style={{
+                          display: 'flex',
+                          alignItems: 'center',
+                          padding: 'var(--spacing-md)',
+                          backgroundColor: 'var(--color-background)',
+                          borderRadius: 'var(--border-radius-md)',
+                          border: '1px solid var(--color-border)',
+                          gap: 'var(--spacing-sm)'
+                        }}
+                      >
+                        <div style={{
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          width: '28px',
+                          height: '28px',
+                          borderRadius: '50%',
+                          backgroundColor: 'var(--color-primary)',
+                          color: 'var(--color-text-on-primary)',
+                          fontSize: 'var(--font-size-sm)',
+                          fontWeight: 'var(--font-weight-semibold)',
+                          flexShrink: 0
+                        }}>
+                          {step.stepNumber}
+                        </div>
+                        <div style={{ flex: '1' }}>
+                          <div style={{ 
+                            fontSize: 'var(--font-size-sm)',
+                            fontWeight: 'var(--font-weight-medium)',
+                            color: 'var(--color-text-primary)',
+                            lineHeight: 'var(--line-height-tight)'
+                          }}>
+                            {step.title}
+                          </div>
+                        </div>
+                        <div style={{ 
+                          fontSize: 'var(--font-size-xs)',
+                          fontWeight: 'var(--font-weight-medium)',
+                          color: 'var(--color-text-secondary)',
+                          flexShrink: 0
+                        }}>
+                          {step.duration}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Outcome Section */}
+                <div style={{
+                  padding: 'var(--spacing-md)',
+                  backgroundColor: 'var(--color-background)',
+                  borderRadius: 'var(--border-radius-md)',
+                  border: '1px solid var(--color-border)',
+                  borderLeft: '4px solid var(--color-success)'
+                }}>
+                  <div style={{ 
+                    fontSize: 'var(--font-size-xs)',
+                    fontWeight: 'var(--font-weight-semibold)',
+                    color: 'var(--color-success)',
+                    marginBottom: 'var(--spacing-xs)',
+                    textTransform: 'uppercase',
+                    letterSpacing: '0.05em',
+                    lineHeight: 'var(--line-height-tight)'
+                  }}>
+                    Expected Outcome
+                  </div>
+                  <div style={{ 
+                    fontSize: 'var(--font-size-sm)',
+                    color: 'var(--color-text-primary)',
+                    lineHeight: 'var(--line-height-normal)'
+                  }}>
+                    {play.outcome}
+                  </div>
+                </div>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
     </div>
   );
 } 
