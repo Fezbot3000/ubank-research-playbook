@@ -346,6 +346,35 @@ export default function HomePage() {
                   </p>
                 </div>
 
+                {/* Sequence Rationale Section */}
+                <div style={{
+                  padding: 'var(--spacing-md)',
+                  backgroundColor: 'var(--color-background)',
+                  borderRadius: 'var(--border-radius-md)',
+                  border: '1px solid var(--color-border)',
+                  borderLeft: '4px solid var(--color-primary)',
+                  marginBottom: 'var(--spacing-lg)'
+                }}>
+                  <div style={{ 
+                    fontSize: 'var(--font-size-xs)',
+                    fontWeight: 'var(--font-weight-semibold)',
+                    color: 'var(--color-primary)',
+                    marginBottom: 'var(--spacing-xs)',
+                    textTransform: 'uppercase',
+                    letterSpacing: '0.05em',
+                    lineHeight: 'var(--line-height-tight)'
+                  }}>
+                    Why This Sequence?
+                  </div>
+                  <div style={{ 
+                    fontSize: 'var(--font-size-sm)',
+                    color: 'var(--color-text-primary)',
+                    lineHeight: 'var(--line-height-normal)'
+                  }}>
+                    {play.sequenceRationale}
+                  </div>
+                </div>
+
                 {/* Steps Section */}
                 <div style={{ 
                   flex: '1', 
