@@ -6,6 +6,7 @@ export interface ResearchPlay {
   timeline: string;
   effort: 'Low' | 'Medium' | 'High';
   outcome: string;
+  sequenceRationale: string;
   steps: PlayStep[];
   tags: string[];
 }
@@ -29,6 +30,7 @@ export const researchPlays: ResearchPlay[] = [
     timeline: "6-8 weeks",
     effort: "High",
     outcome: "Confidence in feature design and user adoption strategy",
+    sequenceRationale: "Start with Benchmarking Analysis to establish baseline metrics and understand current performance before introducing changes. Move to Comprehension Survey to quickly validate if users understand the core concept at scale before investing in detailed design work. Follow with Moderated Usability Testing for deep qualitative insights into specific usability issues, then scale up with Unmoderated Usability Testing for statistical validation of your design improvements. Finally, use A/B Testing in the live environment to measure real-world performance and optimise based on actual user behaviour.",
     steps: [
       {
         stepNumber: 1,
@@ -81,6 +83,7 @@ export const researchPlays: ResearchPlay[] = [
     timeline: "3-4 weeks",
     effort: "Medium",
     outcome: "Improved feature performance and user experience",
+    sequenceRationale: "Begin with Heuristic Analysis to quickly identify obvious usability problems using expert knowledge - this is fast and cost-effective for catching low-hanging fruit. Follow with Moderated Usability Testing to understand the 'why' behind user struggles and uncover issues that expert analysis might miss. Finally, use A/B Testing to measure the real-world impact of your improvements against the current version, ensuring your changes actually improve performance metrics.",
     steps: [
       {
         stepNumber: 1,
@@ -117,6 +120,7 @@ export const researchPlays: ResearchPlay[] = [
     timeline: "1-2 weeks",
     effort: "Low",
     outcome: "Clear, comprehensible content that drives user action",
+    sequenceRationale: "Start with Comprehension Survey to establish baseline understanding scores and identify specific areas where users are confused. This gives you quantitative data on what needs fixing. Then use A/B Testing to validate that your improved content actually performs better in real usage scenarios, measuring both comprehension and conversion metrics.",
     steps: [
       {
         stepNumber: 1,
@@ -145,6 +149,7 @@ export const researchPlays: ResearchPlay[] = [
     timeline: "4-6 weeks",
     effort: "High",
     outcome: "Deep user insights and opportunity identification",
+    sequenceRationale: "Begin with Diary Study to capture authentic user behaviour in their natural environment over time - this reveals patterns and needs that users might not articulate in interviews. Follow with Moderated Usability Testing to dive deeper into specific findings from the diary study, allowing you to ask targeted questions and observe behaviours that emerged from the longitudinal research.",
     steps: [
       {
         stepNumber: 1,
@@ -173,6 +178,7 @@ export const researchPlays: ResearchPlay[] = [
     timeline: "3-5 days",
     effort: "Low",
     outcome: "Fast, actionable insights for design decisions",
+    sequenceRationale: "Start with Heuristic Analysis because expert evaluation is the fastest way to identify obvious issues without recruiting users - you can get results in hours rather than days. Then use Comprehension Survey to validate expert assumptions with actual users, focusing specifically on areas flagged by the expert review for maximum efficiency.",
     steps: [
       {
         stepNumber: 1,
@@ -201,6 +207,7 @@ export const researchPlays: ResearchPlay[] = [
     timeline: "2-3 weeks",
     effort: "Medium",
     outcome: "Validated information architecture and navigation structure",
+    sequenceRationale: "Begin with Card Sorting to understand users' mental models and natural grouping patterns - this informs how to structure your information architecture. Use these insights to design your navigation, then test it with Tree Testing to measure findability without visual design distracting from structural issues. Finally, validate the complete navigation experience with Unmoderated Usability Testing to ensure the structure works in realistic task scenarios.",
     steps: [
       {
         stepNumber: 1,
@@ -237,6 +244,7 @@ export const researchPlays: ResearchPlay[] = [
     timeline: "3-4 weeks", 
     effort: "Medium",
     outcome: "Quantitative satisfaction metrics and prioritised improvement areas",
+    sequenceRationale: "Start with Survey Research to gather broad quantitative data about satisfaction levels and identify patterns across a large user base - this gives you statistical significance and helps prioritise which issues affect the most users. Follow with Moderated Usability Testing to dive deep into the specific pain points and satisfaction drivers identified in the survey, understanding the 'why' behind the numbers.",
     steps: [
       {
         stepNumber: 1,
