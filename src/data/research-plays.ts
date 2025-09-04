@@ -30,7 +30,7 @@ export const researchPlays: ResearchPlay[] = [
     timeline: "6-8 weeks",
     effort: "High",
     outcome: "Confidence in feature design and user adoption strategy",
-    sequenceRationale: "Start with Benchmarking Analysis to establish baseline metrics and understand current performance before introducing changes. Move to Comprehension Survey to quickly validate if users understand the core concept at scale before investing in detailed design work. Follow with Moderated Usability Testing for deep qualitative insights into specific usability issues, then scale up with Unmoderated Usability Testing for statistical validation of your design improvements. Finally, use A/B Testing in the live environment to measure real-world performance and optimise based on actual user behaviour.",
+    sequenceRationale: "You'll want to start with Benchmarking Analysis because you need to know where you're starting from - what's the current performance before you make any changes? This gives you the baseline to measure against later.\n\nNext, run a Comprehension Survey to quickly test if people actually understand your new feature concept. There's no point building something complex if users don't get the basic idea. This is fast and cheap validation before you invest in detailed design work.\n\nOnce you know people understand it, do Moderated Usability Testing to watch real users try to use your design. You'll see exactly where they get stuck and why. This gives you the rich insights to fix the problems.\n\nThen scale up with Unmoderated Usability Testing - now you can test your improved design with more people to get statistical confidence in your changes.\n\nFinally, A/B Testing in the live environment tells you if your feature actually works in the real world with real user behaviour. This is where you optimise based on what people actually do, not what they say they'll do.",
     steps: [
       {
         stepNumber: 1,
@@ -83,7 +83,7 @@ export const researchPlays: ResearchPlay[] = [
     timeline: "3-4 weeks",
     effort: "Medium",
     outcome: "Improved feature performance and user experience",
-    sequenceRationale: "Begin with Heuristic Analysis to quickly identify obvious usability problems using expert knowledge - this is fast and cost-effective for catching low-hanging fruit. Follow with Moderated Usability Testing to understand the 'why' behind user struggles and uncover issues that expert analysis might miss. Finally, use A/B Testing to measure the real-world impact of your improvements against the current version, ensuring your changes actually improve performance metrics.",
+    sequenceRationale: "Start with Heuristic Analysis because it's the fastest way to spot obvious problems. An expert can review your feature in a few hours and catch the low-hanging fruit - stuff that's clearly broken or confusing. This is way cheaper than testing with users first.\n\nNext, do Moderated Usability Testing to understand the 'why' behind the issues. Users will show you problems that expert reviews miss, and you'll see exactly how they struggle with your feature. This tells you what's really causing pain points.\n\nFinally, A/B Testing measures whether your improvements actually work in the real world. You can compare your updated version against the current one and see if users actually perform better with your changes. This gives you the proof that your improvements were worth it.",
     steps: [
       {
         stepNumber: 1,
@@ -120,7 +120,7 @@ export const researchPlays: ResearchPlay[] = [
     timeline: "1-2 weeks",
     effort: "Low",
     outcome: "Clear, comprehensible content that drives user action",
-    sequenceRationale: "Start with Comprehension Survey to establish baseline understanding scores and identify specific areas where users are confused. This gives you quantitative data on what needs fixing. Then use A/B Testing to validate that your improved content actually performs better in real usage scenarios, measuring both comprehension and conversion metrics.",
+    sequenceRationale: "Start with a Comprehension Survey to find out exactly where users are getting confused with your current content. You'll get scores showing which parts are clear and which parts are confusing. This tells you what needs fixing and gives you a baseline to improve from.\n\nThen run A/B Testing to prove your new content actually works better. Test your original content against your improved version to see if more people understand it and take action. This shows you whether your content changes actually make a difference in the real world.",
     steps: [
       {
         stepNumber: 1,
@@ -149,7 +149,7 @@ export const researchPlays: ResearchPlay[] = [
     timeline: "4-6 weeks",
     effort: "High",
     outcome: "Deep user insights and opportunity identification",
-    sequenceRationale: "Begin with Diary Study to capture authentic user behaviour in their natural environment over time - this reveals patterns and needs that users might not articulate in interviews. Follow with Moderated Usability Testing to dive deeper into specific findings from the diary study, allowing you to ask targeted questions and observe behaviours that emerged from the longitudinal research.",
+    sequenceRationale: "You'll want to start with a Diary Study because it captures what users actually do in their normal life, not what they say they do in interviews. Users document their real behaviour over weeks, which reveals patterns and needs they might not even realise they have.\n\nAfter you've got all those diary insights, use Moderated Usability Testing to dig deeper into the interesting stuff you found. You can ask targeted questions about specific behaviours that came up in the diary study and really understand what's driving those patterns.",
     steps: [
       {
         stepNumber: 1,
@@ -178,7 +178,7 @@ export const researchPlays: ResearchPlay[] = [
     timeline: "3-5 days",
     effort: "Low",
     outcome: "Fast, actionable insights for design decisions",
-    sequenceRationale: "Start with Heuristic Analysis because expert evaluation is the fastest way to identify obvious issues without recruiting users - you can get results in hours rather than days. Then use Comprehension Survey to validate expert assumptions with actual users, focusing specifically on areas flagged by the expert review for maximum efficiency.",
+    sequenceRationale: "Start with Heuristic Analysis because you can get answers in hours, not days. An expert can spot the obvious issues without needing to recruit any users. It's the fastest way to catch problems before you spend time and money on user testing.\n\nThen run a quick Comprehension Survey to check if real users agree with what the expert found. Focus on the specific areas the expert flagged to make sure you're not missing anything important. This gives you user validation of the expert assumptions in just a few hours.",
     steps: [
       {
         stepNumber: 1,
@@ -207,7 +207,7 @@ export const researchPlays: ResearchPlay[] = [
     timeline: "2-3 weeks",
     effort: "Medium",
     outcome: "Validated information architecture and navigation structure",
-    sequenceRationale: "Begin with Card Sorting to understand users' mental models and natural grouping patterns - this informs how to structure your information architecture. Use these insights to design your navigation, then test it with Tree Testing to measure findability without visual design distracting from structural issues. Finally, validate the complete navigation experience with Unmoderated Usability Testing to ensure the structure works in realistic task scenarios.",
+    sequenceRationale: "Start with Card Sorting to understand how users naturally think about organising your content. They'll group things in ways that make sense to them, which shows you how to structure your information architecture. Don't guess - let users show you their mental models.\n\nOnce you know how they think about grouping, use Tree Testing to check if they can actually find things in your proposed structure. This tests the navigation without any visual design getting in the way - just pure structure and labelling.\n\nFinally, run Unmoderated Usability Testing to see how the complete navigation experience works with real tasks. This makes sure your structure actually works when people are trying to accomplish something, not just browsing around.",
     steps: [
       {
         stepNumber: 1,
@@ -244,7 +244,7 @@ export const researchPlays: ResearchPlay[] = [
     timeline: "3-4 weeks", 
     effort: "Medium",
     outcome: "Quantitative satisfaction metrics and prioritised improvement areas",
-    sequenceRationale: "Start with Survey Research to gather broad quantitative data about satisfaction levels and identify patterns across a large user base - this gives you statistical significance and helps prioritise which issues affect the most users. Follow with Moderated Usability Testing to dive deep into the specific pain points and satisfaction drivers identified in the survey, understanding the 'why' behind the numbers.",
+    sequenceRationale: "Start with Survey Research to get satisfaction scores from lots of users - you need a big sample size to get reliable data and spot patterns. The survey will tell you which issues are affecting the most people and help you prioritise what to fix first.\n\nOnce you know the main satisfaction problems from the survey, use Moderated Usability Testing to understand why those problems are happening. You'll watch users hit the pain points and see exactly what's causing the frustration. This gives you the insights to actually fix the issues, not just measure them.",
     steps: [
       {
         stepNumber: 1,
